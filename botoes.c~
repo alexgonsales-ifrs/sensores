@@ -1,0 +1,485 @@
+#include <xc.h>
+#include <stdint.h>
+#include "botoes.h"
+#include "lcd.h"
+#include "menu.h"
+#include "main.h"
+#include "adcon.h"
+#include "eeprom.h"
+#include "timer.h"
+#include "rs232.h"
+#include "xtal.h"
+#include <stdio.h> //tst
+
+uint8_t btns_testa(void) {
+    static uint8_t press_start = 0, press_stop = 0, press_up = 0;
+    static uint8_t press_down = 0, press_menu=0;
+
+    /**< BOTAO START/SELECT        */
+    if (press_start == 1)
+          if(BT_START_SEL == 0)
+          {
+              __delay_ms(10);
+              press_start = 0;
+              return P_START;
+          }
+    if(BT_START_SEL == 1) {
+        __delay_ms(10);
+        press_start = 1;
+          }
+    /******************************/
+
+    /**< BOTAO STOP/ESC             */
+    if (press_stop == 1)
+        if(BT_STOP_ESC == 0)
+        {
+            __delay_ms(10);
+            press_stop = 0;
+            return P_STOP;
+        }
+    if (BT_STOP_ESC == 1)
+    {
+        __delay_ms(10);
+        press_stop = 1;
+    }
+    /**************************************/
+
+    /**< BOTAO UP                   */
+    if (press_up == 1)
+        if(BT_UP == 0)
+        {
+            __delay_ms(10);
+            press_up = 0;
+            return P_UP;
+        }
+    if (BT_UP == 1)
+    {
+        __delay_ms(10);
+        press_up = 1;
+    }
+    /*************************************/
+
+    /**< BOTAO DOWN                */
+    if (press_down == 1)
+        if(BT_DOWN == 0)
+        {
+            __delay_ms(10);
+            press_down = 0;
+            return P_DOWN;
+        }
+    if (BT_DOWN == 1)
+    {
+        __delay_ms(10);
+        press_down = 1;
+    }
+    /*************************************/
+
+    return 0;
+}
+
+void btns_init(void) {
+    //TRISB =  botoes, entrada
+    //WPUB = HABILITA PULL-UPS (PORTB)
+    //IOCB = interrupções PORTB
+    
+    //TRISB = 0xf0;
+    PORTB = 0;
+    BT_START_SEL_TRIS = BT_STOP_ESC_TRIS = BT_UP_TRIS = BT_DOWN_TRIS = 1;
+#ifdef _PIC16F886_H_ //portabilidade
+    OPTION_REGbits.nRBPU = 0;  //HABILITA PULL-UPS (BIT ~WBPU)
+    WPUB = 0xf0;    // weak pull-up portb
+    //DESABILITA ANALÓGICAS 11 a 13
+    //obs: não funciona se deixar ans12 como 0
+    ANSELH = 0b00000111;
+    IOCB = 0xf0;    // interrupt on change portb
+#endif
+    INTCONbits.RBIE = 1; // ativa interrupção PORTB
+}
+
+void btns_processa(uint8_t op) {
+    static Estados est = EST_MENU_INICIO;
+    static int8_t item_ini = 0;
+    static int8_t item_am = 0;
+    static int8_t item_se = 1;
+
+    switch (est) {
+        case EST_MENU_INICIO:
+            lcd_clear();
+            switch (op) {
+                case P_UP:
+                    if (item_ini > 0) {
+                        item_ini--;
+                    }
+                break;
+                case P_DOWN:
+                    if (item_ini < TAM_MENU_INICIAL - 1) {
+                        item_ini++;
+                    }
+                break;
+                case P_START:
+                    switch(item_ini) {
+                        case 0: //"Monitora"
+                            //est = EST_MENU_CAPTURA_E_MOSTRA;
+                            est = EST_CAPTURA_E_MOSTRA;
+                        break;
+                        case 1: //"Monitora/Grava"
+                            //est = EST_MENU_CAPTURA_E_GRAVA;
+                            est = EST_CAPTURA_E_GRAVA;
+                        break;
+                        case 2: //"Ver Todos"
+                            //est = EST_MENU_MOSTRA_TODOS;
+                            est = EST_MOSTRA_TODOS;
+                        break;
+                        case 3: //"Max/Min"
+                            //est = EST_MENU_MOSTRA_MAX_MIN;
+                            est = EST_MOSTRA_MAX_MIN;
+                        break;
+                        case 4: //"Limpar"
+                            //est = EST_MENU_LIMPAR;
+                            est = EST_LIMPAR;
+                        break;
+                        case 5: //"Tempo Amostra"
+                            item_am = eeprom_ler_byte(END_TX_AMOSTRA);
+                            //est = EST_MENU_VER_AMOSTRA;
+                            est = EST_MENU_CONF_TEMPO_AMOSTRA;
+                        break;
+                        case 6: //"Enviar Dados"
+                            //est = EST_MENU_ENVIAR_DADOS;
+                            est = EST_ENVIAR_DADOS;
+                        break;
+                        case 7: //"Quant Sensores"
+                            //item_se = menu_qtd_sensores();
+                            item_se = eeprom_ler_byte(END_QTDE_SENSORES);
+                            //est = EST_MENU_QTDE_SENSORES;
+                            est = EST_MENU_CONF_QUANT_SENSORES;
+                        break;
+                    }
+                break;
+            }
+            lcd_puts(menu_inicial[item_ini]);
+        break;
+        //case EST_MENU_CAPTURA_E_MOSTRA:
+        case EST_CAPTURA_E_MOSTRA:
+            switch (op) {
+                case P_START:
+                    timer0_init();
+                    INTCONbits.T0IE = 1;
+                    adcon_monitora(0, eeprom_ler_byte(END_QTDE_SENSORES));
+                break;
+                case P_STOP:
+                    INTCONbits.T0IE = 0;
+                    est = EST_MENU_INICIO;
+                break;
+            }
+        break;
+        //case EST_MENU_CAPTURA_E_GRAVA:
+        case EST_CAPTURA_E_GRAVA:
+            switch (op) {
+                case P_START:
+                    timer2_init();
+                    INTCONbits.T0IE = 0;
+                    T2CONbits.TMR2ON = 1;
+                    adcon_monitora_grava(0, eeprom_ler_byte(END_QTDE_SENSORES));
+                break;
+                case P_STOP:
+                    T2CONbits.TMR2ON = 0;
+                    est = EST_MENU_INICIO;
+                break;
+            }
+        break;
+        //case EST_MENU_MOSTRA_TODOS:
+        case EST_MOSTRA_TODOS:
+            switch (op) {
+                case P_START:
+                    /*menu_am = 0;
+                    menu_ini = 0;
+                    menu_se = 0;
+                    menu_vt = 1;
+                     */
+                    //menu_ver_todos(item_vt);
+                break;
+                case P_STOP:
+                    est = EST_MENU_INICIO;
+                break;
+            }
+        break;
+        //case EST_MENU_MOSTRA_MAX_MIN:
+        case EST_MOSTRA_MAX_MIN:
+            switch (op) {
+                case P_START:
+                    menu_max_min();
+                break;
+                case P_STOP:
+                    est = EST_MENU_INICIO;
+                break;
+            }
+        break;
+        //case EST_MENU_LIMPAR:
+        case EST_LIMPAR:
+            switch (op) {
+                case P_START:
+                    menu_limpar();
+                break;
+                case P_STOP:
+                    est = EST_MENU_INICIO;
+                break;
+            }
+        break;
+        //case EST_MENU_VER_AMOSTRA:
+        case EST_MENU_CONF_TEMPO_AMOSTRA:
+            switch (op) {
+                case P_UP:
+                    if (item_am > 0) {
+                        item_am--;
+                        lcd_puts(menu_tempo_amostra[item_am].str_tempo_amostra);
+                    }
+                break;
+                case P_DOWN:
+                    //if (item_am < T_MENU_AM - 1) {
+                    if (item_am < TAM_MENU_TEMPO_AMOSTRA - 1) {
+                        item_am++;
+                        lcd_puts(menu_tempo_amostra[item_am].str_tempo_amostra);
+                    }
+                break;
+                case P_STOP:
+                    est = EST_MENU_INICIO;
+                break;
+                case P_START:
+                    //eeprom_gravar_word(END_TX_AMOSTRA, menu_tempo_amostra[item_am].ul_tempo_amostra);
+                    eeprom_gravar_byte(END_TX_AMOSTRA, menu_tempo_amostra[item_am].i_pos_t_amostra);
+                    est = EST_MENU_INICIO;
+                break;
+                default:
+                    lcd_clear();
+                    lcd_puts(menu_tempo_amostra[item_am].str_tempo_amostra);
+                break;
+            }
+        break;
+        //case EST_MENU_ENVIAR_DADOS:
+        case EST_ENVIAR_DADOS:
+            switch (op) {
+                case P_START:
+                    rs232_transmite();
+                break;
+                case P_STOP:
+                    est = EST_MENU_INICIO;
+                break;
+            }
+        break;
+        //case EST_MENU_QTDE_SENSORES:
+        case EST_MENU_CONF_QUANT_SENSORES:
+            switch (op) {
+                case P_UP:
+                    if (item_se > 0) {
+                        item_se--;
+                    }
+                break;
+                case P_DOWN:
+                    //if (item_se < T_MENU_SE) {
+                    if (item_se < TAM_MENU_QUANT_SENSORES) {
+                        item_se++;
+                    }
+                break;
+                case P_STOP:
+                    est = EST_MENU_INICIO;
+                break;
+                case P_START:
+                    eeprom_gravar_byte(END_QTDE_SENSORES, item_se);
+                    est = EST_MENU_INICIO;
+                break;
+                default:
+                    lcd_clear();
+                    //lcd_puts(menu_sensores[item_se - 1].str_quant_sensores);
+                    lcd_puts(menu_quant_sensores[item_se - 1].str_quant_sensores);
+                break;
+            }
+        break;
+    }
+}
+/*
+void btns_processa(uint8_t op) {
+    static int8_t menu_ini = 1;
+    static int8_t menu_am = 0;
+    static int8_t menu_se = 0;
+    static int8_t menu_vt = 0;
+    static int8_t item_ini = -1;
+    static int8_t item_am = 0;
+    static int8_t item_se = 0;
+    static int8_t item_vt = 1;
+
+    if (op == P_START) {
+        lcd_clear();
+        if (menu_ini) {
+            switch (item_ini) {
+                case 0: //monitora
+                    timer0_init();
+                    //desligar timer2 ?
+                    INTCONbits.T0IE = 1;
+                    adcon_monitora(0, eeprom_ler_byte(END_QTDE_SENSORES));
+                    
+                break;
+                case 1: //monitora/grava
+                    timer2_init();
+                    //desligar timer0
+                    INTCONbits.T0IE = 0;
+                    //
+                    T2CONbits.TMR2ON = 1;
+                    //adcon_monitora_grava(0, eeprom_ler_byte(END_QTDE_SENSORES), eeprom_ler_byte(END_QTDE_VALORES));
+                    adcon_monitora_grava(0, eeprom_ler_byte(END_QTDE_SENSORES));                    
+                break;
+                case 2: //ver todos
+                    menu_am = 0;
+                    menu_ini = 0;
+                    menu_se = 0;
+                    menu_vt = 1;
+                    menu_ver_todos(item_vt);
+                break;
+                case 3: //max/min
+                    menu_max_min();
+                break;
+                case 4:
+                    menu_limpar();
+                break;
+                case 5: //tempo_amostra
+                    menu_am = 1;
+                    menu_ini = 0;
+                    menu_se = 0;
+                    menu_vt = 0;
+                    
+                    item_am = menu_taxa_amostra();
+                break;
+                case 6: //enviar dados
+                    rs232_transmite();
+                break;
+                case 7: //quant_sensores
+                    menu_am = 0;
+                    menu_ini = 0;
+                    menu_se = 1;
+                    menu_vt = 0;
+
+                    item_se = menu_qtd_sensores();
+                    
+                break;
+                case -1:
+                    item_ini = 0; //variável tem que ser mudada para a função lcd_puts e o resto da rotina
+                    lcd_puts(menu_inicial[item_ini]);
+                break;
+            }
+        }
+        else {
+            if (menu_am) {
+                menu_am = 0;
+                menu_ini = 1;
+                menu_se = 0;
+                menu_vt = 0;
+                eeprom_gravar_word(END_TX_AMOSTRA, menu_tempo_amostra[item_am].ul_tempo_amostra);
+                //gl_tempo_amostra = menu_tempo_amostra[item_am].ul_tempo_amostra;
+                lcd_puts(menu_inicial[item_ini]);
+            }
+            else {
+                if (menu_se) {
+                    menu_am = 0;
+                    menu_ini = 1;
+                    menu_se = 0;
+                    menu_vt = 0;
+                    eeprom_gravar_byte(END_QTDE_SENSORES, menu_sensores[item_se].i_quant_sensores);
+                    //gl_quant_sensores = menu_sensores[item_se].i_quant_sensores;
+                    lcd_puts(menu_inicial[item_ini]);
+                }
+            }
+        }
+    }
+    else
+    if (op == P_STOP) {
+        switch (item_ini) {
+            case 0:
+                INTCONbits.T0IE = 0;
+            break;
+            case 1:
+                T2CONbits.TMR2ON = 0;
+            break;
+            case -1:
+                item_ini = 0;
+            break;
+        }
+        lcd_clear();
+        menu_am = 0;
+        menu_ini = 1;
+        menu_se = 0;
+        menu_vt = 0;
+        lcd_puts(menu_inicial[item_ini]);
+    }
+    else
+    if (op == P_UP) {
+        lcd_clear();
+        if (menu_ini) {
+            if (item_ini <= 0)
+                item_ini = 0;
+            else
+                item_ini--;
+            lcd_puts(menu_inicial[item_ini]);
+        }
+        else {
+            if (menu_am) {
+                if (item_am <= 0)
+                    item_am = 0;
+                else
+                    item_am--;
+                lcd_puts(menu_tempo_amostra[item_am].str_tempo_amostra);
+            }
+            else {
+                if (menu_se) {
+                    if (item_se <= 0)
+                        item_se = 0;
+                    else
+                        item_se--;
+                    lcd_puts(menu_sensores[item_se].str_quant_sensores);
+                }
+                else {
+                    if (menu_vt) {
+                        if (item_vt <= 1)
+                            item_vt = 1;
+                        else
+                            item_vt--;
+                        menu_ver_todos(item_vt);
+                    }
+                }
+            }
+        }
+    }
+    else
+    if (op == P_DOWN) {
+        lcd_clear();
+        if (menu_ini) {
+            if (item_ini < T_MENU_INI - 1) {
+                item_ini++;
+            }
+            lcd_puts(menu_inicial[item_ini]);
+        }
+        else {
+            if (menu_am) {
+                if (item_am < T_MENU_AM - 1) {
+                    item_am++;
+                }
+                lcd_puts(menu_tempo_amostra[item_am].str_tempo_amostra);
+            }
+            else {
+                if (menu_se) {
+                    if (item_se < T_MENU_SE - 1) {
+                        item_se++;
+                    }
+                    lcd_puts(menu_sensores[item_se].str_quant_sensores);
+                }
+                else {
+                    if (menu_vt) {
+                        if (item_vt < eeprom_ler_byte(END_QTDE_VALORES) - 4) {
+                            item_vt++;
+                        }
+                        menu_ver_todos(item_vt);
+                    }
+                }
+            }
+        }
+    }
+}
+ */

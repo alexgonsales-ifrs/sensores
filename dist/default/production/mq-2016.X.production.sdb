@@ -1,0 +1,883 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F886 ]
+"40 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/global.h
+[e E1722 . `uc
+EST_INICIO 0
+EST_MENU_PRINCIPAL 1
+EST_CAPTURA_E_MOSTRA 2
+EST_CAPTURA_E_GRAVA 3
+EST_MOSTRA_TODOS 4
+EST_MOSTRA_MAX_MIN 5
+EST_LIMPAR 6
+EST_MENU_CONF_TEMPO_AMOSTRA 7
+EST_MENU_CONF_QUANT_SENSORES 8
+]
+[e E1600 . `uc
+EST_INICIO 0
+EST_MENU_PRINCIPAL 1
+EST_CAPTURA_E_MOSTRA 2
+EST_CAPTURA_E_GRAVA 3
+EST_MOSTRA_TODOS 4
+EST_MOSTRA_MAX_MIN 5
+EST_LIMPAR 6
+EST_MENU_CONF_TEMPO_AMOSTRA 7
+EST_MENU_CONF_QUANT_SENSORES 8
+]
+[e E1778 . `uc
+EST_INICIO 0
+EST_MENU_PRINCIPAL 1
+EST_CAPTURA_E_MOSTRA 2
+EST_CAPTURA_E_GRAVA 3
+EST_MOSTRA_TODOS 4
+EST_MOSTRA_MAX_MIN 5
+EST_LIMPAR 6
+EST_MENU_CONF_TEMPO_AMOSTRA 7
+EST_MENU_CONF_QUANT_SENSORES 8
+]
+[e E1660 . `uc
+EST_INICIO 0
+EST_MENU_PRINCIPAL 1
+EST_CAPTURA_E_MOSTRA 2
+EST_CAPTURA_E_GRAVA 3
+EST_MOSTRA_TODOS 4
+EST_MOSTRA_MAX_MIN 5
+EST_LIMPAR 6
+EST_MENU_CONF_TEMPO_AMOSTRA 7
+EST_MENU_CONF_QUANT_SENSORES 8
+]
+"27 /opt/microchip/xc8/v1.20/include/stdlib.h
+[s S484 . 4 `i 1 rem 2 0 `i 1 quot 2 2 ]
+"5 /opt/microchip/xc8/v1.20/sources/common/cdiv.c
+[v _div div `(S484  1 e 4 0 ]
+"493 /opt/microchip/xc8/v1.20/sources/common/doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"5 /opt/microchip/xc8/v1.20/sources/common/evalpoly.c
+[v _eval_poly eval_poly `(d  1 e 3 0 ]
+"13 /opt/microchip/xc8/v1.20/sources/common/exp.c
+[v _exp exp `(d  1 e 3 0 ]
+"14 /opt/microchip/xc8/v1.20/sources/common/floor.c
+[v _floor floor `(d  1 e 3 0 ]
+"255 /opt/microchip/xc8/v1.20/sources/common/frexp.c
+[v _frexp frexp `(d  1 e 3 0 ]
+"278
+[v _ldexp ldexp `(d  1 e 3 0 ]
+"6 /opt/microchip/xc8/v1.20/sources/common/log.c
+[v _log log `(d  1 e 3 0 ]
+"40
+[v _log10 log10 `(d  1 e 3 0 ]
+"6 /opt/microchip/xc8/v1.20/sources/common/pow.c
+[v _pow pow `(d  1 e 3 0 ]
+"5 /opt/microchip/xc8/v1.20/sources/pic/abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"5 /opt/microchip/xc8/v1.20/sources/pic/abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"34 /opt/microchip/xc8/v1.20/sources/pic/abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"5 /opt/microchip/xc8/v1.20/sources/pic/aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 /opt/microchip/xc8/v1.20/sources/pic/almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"43 /opt/microchip/xc8/v1.20/sources/pic/altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"5 /opt/microchip/xc8/v1.20/sources/pic/atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"5 /opt/microchip/xc8/v1.20/sources/pic/atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"38 /opt/microchip/xc8/v1.20/sources/pic/attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"5 /opt/microchip/xc8/v1.20/sources/pic/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 /opt/microchip/xc8/v1.20/sources/pic/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"33 /opt/microchip/xc8/v1.20/sources/pic/awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"3 /opt/microchip/xc8/v1.20/sources/pic/bmul.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"7 /opt/microchip/xc8/v1.20/sources/pic/eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"25
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"49
+[v ___eetoc __eetoc `(uc  1 e 1 0 ]
+"57
+[v ___eetoi __eetoi `(ui  1 e 2 0 ]
+"65
+[v ___eetom __eetom `(um  1 e 3 0 ]
+"73
+[v ___eetol __eetol `(ul  1 e 4 0 ]
+"81
+[v ___ctoee __ctoee `(uc  1 e 1 0 ]
+"88
+[v ___itoee __itoee `(ui  1 e 2 0 ]
+"95
+[v ___mtoee __mtoee `(um  1 e 3 0 ]
+"102
+[v ___ltoee __ltoee `(ul  1 e 4 0 ]
+"109
+[v ___eetoft __eetoft `(f  1 e 3 0 ]
+"117
+[v ___eetofl __eetofl `(d  1 e 3 0 ]
+"125
+[v ___fttoee __fttoee `(f  1 e 3 0 ]
+"132
+[v ___fltoee __fltoee `(d  1 e 3 0 ]
+"7 /opt/microchip/xc8/v1.20/sources/pic/eeread.c
+[v _eeprom_read eeprom_read `(uc  1 e 1 0 ]
+[v i1_eeprom_read eeprom_read `(uc  1 e 1 0 ]
+[v i1_eeprom_read eeprom_read `(uc  1 e 1 0 ]
+"7 /opt/microchip/xc8/v1.20/sources/pic/eewrite.c
+[v _eeprom_write eeprom_write `(v  1 e 0 0 ]
+[v i1_eeprom_write eeprom_write `(v  1 e 0 0 ]
+[v i1_eeprom_write eeprom_write `(v  1 e 0 0 ]
+"63 /opt/microchip/xc8/v1.20/sources/pic/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"87 /opt/microchip/xc8/v1.20/sources/pic/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"50 /opt/microchip/xc8/v1.20/sources/pic/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"5 /opt/microchip/xc8/v1.20/sources/pic/ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"52 /opt/microchip/xc8/v1.20/sources/pic/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"16 /opt/microchip/xc8/v1.20/sources/pic/ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"17 /opt/microchip/xc8/v1.20/sources/pic/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"45 /opt/microchip/xc8/v1.20/sources/pic/fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"5 /opt/microchip/xc8/v1.20/sources/pic/lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"5 /opt/microchip/xc8/v1.20/sources/pic/lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"28 /opt/microchip/xc8/v1.20/sources/pic/lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"5 /opt/microchip/xc8/v1.20/sources/pic/lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"5 /opt/microchip/xc8/v1.20/sources/pic/llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"36 /opt/microchip/xc8/v1.20/sources/pic/lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"3 /opt/microchip/xc8/v1.20/sources/pic/lmul.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"5 /opt/microchip/xc8/v1.20/sources/pic/ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"5 /opt/microchip/xc8/v1.20/sources/pic/ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"31 /opt/microchip/xc8/v1.20/sources/pic/lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"5 /opt/microchip/xc8/v1.20/sources/pic/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 /opt/microchip/xc8/v1.20/sources/pic/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"29 /opt/microchip/xc8/v1.20/sources/pic/lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"3 /opt/microchip/xc8/v1.20/sources/pic/tmul.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"3 /opt/microchip/xc8/v1.20/sources/pic/wmul.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"18 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c
+[v _adcon_captura_grava adcon_captura_grava `(v  1 e 0 0 ]
+"79
+[v _adcon_ler_canal adcon_ler_canal `(ui  1 e 2 0 ]
+"108
+[v _adcon_mostra adcon_mostra `(v  1 e 0 0 ]
+"137
+[v _adcon_init adcon_init `(v  1 e 0 0 ]
+"7 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c
+[v _btns_testa btns_testa `(uc  1 e 1 0 ]
+"25
+[v _btns_init btns_init `(v  1 e 0 0 ]
+"4 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/eeprom.c
+[v _eeprom_ler_word eeprom_ler_word `(ui  1 e 2 0 ]
+"23
+[v _eeprom_gravar_word eeprom_gravar_word `(v  1 e 0 0 ]
+[v i1_eeprom_gravar_word eeprom_gravar_word `(v  1 e 0 0 ]
+[v i1_eeprom_gravar_word eeprom_gravar_word `(v  1 e 0 0 ]
+"38 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c
+[v _estado_maquina estado_maquina `(v  1 e 0 0 ]
+"95
+[v _estado_inicial estado_inicial `(v  1 e 0 0 ]
+"103
+[v _estado_menu_limpar estado_menu_limpar `(v  1 e 0 0 ]
+"113
+[v _estado_captura_mostra estado_captura_mostra `(v  1 e 0 0 ]
+"124
+[v _estado_menu_principal estado_menu_principal `(v  1 e 0 0 ]
+"251
+[v _estado_ver_todos estado_ver_todos `(v  1 e 0 0 ]
+"277
+[v _estado_max_min estado_max_min `(v  1 e 0 0 ]
+"287
+[v _estado_menu_conf_tempo_amostra estado_menu_conf_tempo_amostra `(v  1 e 0 0 ]
+"316
+[v _estado_enviar_dados estado_enviar_dados `(v  1 e 0 0 ]
+"326
+[v _estado_menu_conf_quant_sensores estado_menu_conf_quant_sensores `(v  1 e 0 0 ]
+"357
+[v _estado_executa_muda estado_executa_muda `(v  1 e 0 0 ]
+"14 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c
+[v _handler handler `II(v  1 e 0 0 ]
+"13 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c
+[v _lcd_write lcd_write `(v  1 e 0 0 ]
+[v i1_lcd_write lcd_write `(v  1 e 0 0 ]
+[v i1_lcd_write lcd_write `(v  1 e 0 0 ]
+"39
+[v _lcd_clear lcd_clear `(v  1 e 0 0 ]
+"46
+[v _lcd_goto lcd_goto `(v  1 e 0 0 ]
+[v i1_lcd_goto lcd_goto `(v  1 e 0 0 ]
+[v i1_lcd_goto lcd_goto `(v  1 e 0 0 ]
+"60
+[v _lcd_puts lcd_puts `(v  1 e 0 0 ]
+[v i1_lcd_puts lcd_puts `(v  1 e 0 0 ]
+[v i1_lcd_puts lcd_puts `(v  1 e 0 0 ]
+"94
+[v _lcd_init lcd_init `(v  1 e 0 0 ]
+"33 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c
+[v _main main `(i  1 e 2 0 ]
+"18 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/mq6.c
+[v _mq6_calibrar mq6_calibrar `(ui  1 e 2 0 ]
+"38
+[v _mq_mostra mq_mostra `(v  1 e 0 0 ]
+"8 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c
+[v _rs232_init rs232_init `(v  1 e 0 0 ]
+"26
+[v _rs232_transmite rs232_transmite `(uc  1 e 1 0 ]
+"4 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/timer.c
+[v _timer0_init timer0_init `(v  1 e 0 0 ]
+"50 /opt/microchip/xc8/v1.20/include/pic16f886.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+[s S80 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"387
+[s S89 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S94 . 1 `S80 1 . 1 0 `S89 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES94  1 e 1 @11 ]
+[s S238 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"457
+[u S246 . 1 `S238 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES246  1 e 1 @12 ]
+"1022
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1028
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1121
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+[s S435 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1158
+[s S440 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S449 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S452 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[u S455 . 1 `S435 1 . 1 0 `S440 1 . 1 0 `S449 1 . 1 0 `S452 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES455  1 e 1 @31 ]
+[s S170 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"1247
+[s S177 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S181 . 1 `S170 1 . 1 0 `S177 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES181  1 e 1 @129 ]
+"1296
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1515
+[v _PIE1bits PIE1bits `VES246  1 e 1 @140 ]
+"2133
+[v _WPUB WPUB `VEuc  1 e 1 @149 ]
+"2202
+[v _IOCB IOCB `VEuc  1 e 1 @150 ]
+"2425
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2748
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+[s S502 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 VCFG0 1 0 :1:4 
+`uc 1 VCFG1 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"2768
+[u S508 . 1 `S502 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES508  1 e 1 @159 ]
+"3017
+[v _EEDATA EEDATA `VEuc  1 e 1 @268 ]
+"3028
+[v _EEADR EEADR `VEuc  1 e 1 @269 ]
+"3153
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3196
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"3245
+[v _EECON1 EECON1 `VEuc  1 e 1 @396 ]
+"3289
+[v _EECON2 EECON2 `VEuc  1 e 1 @397 ]
+"3369
+[v _BRG16 BRG16 `VEb  1 e 0 @3131 ]
+"3387
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"3435
+[v _CARRY CARRY `VEb  1 e 0 @24 ]
+"3481
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"3521
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"3659
+[v _RB0 RB0 `VEb  1 e 0 @48 ]
+"3661
+[v _RB1 RB1 `VEb  1 e 0 @49 ]
+"3663
+[v _RB2 RB2 `VEb  1 e 0 @50 ]
+"3667
+[v _RB4 RB4 `VEb  1 e 0 @52 ]
+"3669
+[v _RB5 RB5 `VEb  1 e 0 @53 ]
+"3671
+[v _RB6 RB6 `VEb  1 e 0 @54 ]
+"3673
+[v _RB7 RB7 `VEb  1 e 0 @55 ]
+"3675
+[v _RBIE RBIE `VEb  1 e 0 @91 ]
+"3677
+[v _RBIF RBIF `VEb  1 e 0 @88 ]
+"3679
+[v _RC0 RC0 `VEb  1 e 0 @56 ]
+"3681
+[v _RC1 RC1 `VEb  1 e 0 @57 ]
+"3683
+[v _RC2 RC2 `VEb  1 e 0 @58 ]
+"3709
+[v _RD RD `VEb  1 e 0 @3168 ]
+"3741
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"3777
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"3851
+[v _TRISB0 TRISB0 `VEb  1 e 0 @1072 ]
+"3853
+[v _TRISB1 TRISB1 `VEb  1 e 0 @1073 ]
+"3855
+[v _TRISB2 TRISB2 `VEb  1 e 0 @1074 ]
+"3859
+[v _TRISB4 TRISB4 `VEb  1 e 0 @1076 ]
+"3861
+[v _TRISB5 TRISB5 `VEb  1 e 0 @1077 ]
+"3863
+[v _TRISB6 TRISB6 `VEb  1 e 0 @1078 ]
+"3865
+[v _TRISB7 TRISB7 `VEb  1 e 0 @1079 ]
+"3867
+[v _TRISC0 TRISC0 `VEb  1 e 0 @1080 ]
+"3869
+[v _TRISC1 TRISC1 `VEb  1 e 0 @1081 ]
+"3871
+[v _TRISC2 TRISC2 `VEb  1 e 0 @1082 ]
+"3879
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"3881
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"3899
+[v _TX9 TX9 `VEb  1 e 0 @1222 ]
+"3905
+[v _TXEN TXEN `VEb  1 e 0 @1221 ]
+"3965
+[v _WR WR `VEb  1 e 0 @3169 ]
+"3967
+[v _WREN WREN `VEb  1 e 0 @3170 ]
+"354 /opt/microchip/xc8/v1.20/sources/common/doprnt.c
+[v _dpowers dpowers `DCC[5]ui  1 s 10 dpowers ]
+"3 /opt/microchip/xc8/v1.20/sources/common/errno.c
+[v _errno errno `i  1 e 2 0 ]
+"17 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.h
+[v _canais canais `DCC[4]uc  1 e 4 0 ]
+"18 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c
+[v _gl_item_menu_principal gl_item_menu_principal `uc  1 e 1 0 ]
+"19
+[v _gl_item_menu_ver_todos gl_item_menu_ver_todos `uc  1 e 1 0 ]
+"20
+[v _gl_item_menu_config_amostra gl_item_menu_config_amostra `ui  1 e 2 0 ]
+"21
+[v _gl_item_menu_config_sensores gl_item_menu_config_sensores `uc  1 e 1 0 ]
+"40 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/global.h
+[v _gl_estado gl_estado `E1722  1 e 1 0 ]
+[s S29 . 2 `uc 1 y 1 0 `uc 1 x 1 1 ]
+"85 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.h
+[v _LCD_POSICAO LCD_POSICAO `DCC[4]S29  1 e 8 0 ]
+"28 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/menu.h
+[v _menu_inicial menu_inicial `[7]*.25DCCuc  1 e 14 0 ]
+"18 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/mq6.h
+[v _mq_gl_r0 mq_gl_r0 `DCCui  1 e 2 0 ]
+[s S397 . 3 `*.25DCCuc 1 str_quant_sensores 2 0 `c 1 i_quant_sensores 1 2 ]
+"24 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/quant_sensores.h
+[v _menu_quant_sensores menu_quant_sensores `DCC[4]S397  1 e 12 0 ]
+[s S235 . 4 `*.25DCCuc 1 str_tempo_amostra 2 0 `DCCui 1 ul_tempo_amostra 2 2 ]
+"23 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/tempo_amostra.h
+[v _menu_tempo_amostra menu_tempo_amostra `DCC[7]S235  1 e 28 0 ]
+"33 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"65
+[v main@i i `uc  1 a 1 1 ]
+"100
+} 0
+"4 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/timer.c
+[v _timer0_init timer0_init `(v  1 e 0 0 ]
+{
+"27
+} 0
+"137 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c
+[v _adcon_init adcon_init `(v  1 e 0 0 ]
+{
+"153
+} 0
+"23 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/eeprom.c
+[v _eeprom_gravar_word eeprom_gravar_word `(v  1 e 0 0 ]
+{
+[v eeprom_gravar_word@end end `uc  1 a 1 11 ]
+[v eeprom_gravar_word@end end `uc  1 a 1 11 ]
+[v eeprom_gravar_word@dado dado `ui  1 p 2 8 ]
+"34
+} 0
+"7 /opt/microchip/xc8/v1.20/sources/pic/eewrite.c
+[v _eeprom_write eeprom_write `(v  1 e 0 0 ]
+{
+[v eeprom_write@addr addr `uc  1 a 1 7 ]
+[v eeprom_write@addr addr `uc  1 a 1 7 ]
+[v eeprom_write@value value `uc  1 p 1 5 ]
+"9
+} 0
+"7 /opt/microchip/xc8/v1.20/sources/pic/eeread.c
+[v _eeprom_read eeprom_read `(uc  1 e 1 0 ]
+{
+[v eeprom_read@addr addr `uc  1 a 1 6 ]
+[v eeprom_read@addr addr `uc  1 a 1 6 ]
+"12
+} 0
+"46 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c
+[v _lcd_goto lcd_goto `(v  1 e 0 0 ]
+{
+[v lcd_goto@y y `uc  1 a 1 9 ]
+[v lcd_goto@y y `uc  1 a 1 9 ]
+[v lcd_goto@x x `uc  1 p 1 7 ]
+"58
+} 0
+"60
+[v _lcd_puts lcd_puts `(v  1 e 0 0 ]
+{
+"61
+[v lcd_puts@cmd cmd `uc  1 a 1 11 ]
+"60
+[v lcd_puts@str str `*.26DCCuc  1 p 2 7 ]
+"92
+} 0
+"94
+[v _lcd_init lcd_init `(v  1 e 0 0 ]
+{
+"104
+} 0
+"13
+[v _lcd_write lcd_write `(v  1 e 0 0 ]
+{
+[v lcd_write@c c `uc  1 a 1 6 ]
+[v lcd_write@c c `uc  1 a 1 6 ]
+"37
+} 0
+"8 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c
+[v _rs232_init rs232_init `(v  1 e 0 0 ]
+{
+"24
+} 0
+"25 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c
+[v _btns_init btns_init `(v  1 e 0 0 ]
+{
+"46
+} 0
+"14 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c
+[v _handler handler `II(v  1 e 0 0 ]
+{
+"22
+[v handler@pos_taxa pos_taxa `ui  1 a 2 2 ]
+[v handler@tempo_amostra tempo_amostra `ui  1 a 2 0 ]
+"16
+[v handler@option option `uc  1 a 1 4 ]
+"18
+[v handler@count_t0 count_t0 `ui  1 s 2 count_t0 ]
+"130
+} 0
+"38 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c
+[v _estado_maquina estado_maquina `(v  1 e 0 0 ]
+{
+[v estado_maquina@op op `uc  1 a 1 72 ]
+[v estado_maquina@op op `uc  1 a 1 72 ]
+"89
+} 0
+"326
+[v _estado_menu_conf_quant_sensores estado_menu_conf_quant_sensores `(v  1 e 0 0 ]
+{
+[v estado_menu_conf_quant_sensores@opt opt `uc  1 a 1 59 ]
+[v estado_menu_conf_quant_sensores@opt opt `uc  1 a 1 59 ]
+"350
+} 0
+"287
+[v _estado_menu_conf_tempo_amostra estado_menu_conf_tempo_amostra `(v  1 e 0 0 ]
+{
+[v estado_menu_conf_tempo_amostra@opt opt `uc  1 a 1 58 ]
+[v estado_menu_conf_tempo_amostra@opt opt `uc  1 a 1 58 ]
+"310
+} 0
+"103
+[v _estado_menu_limpar estado_menu_limpar `(v  1 e 0 0 ]
+{
+[v estado_menu_limpar@opt opt `uc  1 a 1 58 ]
+[v estado_menu_limpar@opt opt `uc  1 a 1 58 ]
+"107
+} 0
+"277
+[v _estado_max_min estado_max_min `(v  1 e 0 0 ]
+{
+[v estado_max_min@opt opt `uc  1 a 1 58 ]
+[v estado_max_min@opt opt `uc  1 a 1 58 ]
+"281
+} 0
+"251
+[v _estado_ver_todos estado_ver_todos `(v  1 e 0 0 ]
+{
+[v estado_ver_todos@opt opt `uc  1 a 1 59 ]
+[v estado_ver_todos@opt opt `uc  1 a 1 59 ]
+"271
+} 0
+"5 /opt/microchip/xc8/v1.20/sources/pic/lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+{
+[v ___lbdiv@dividend dividend `uc  1 a 1 4 ]
+"6
+[v ___lbdiv@quotient quotient `uc  1 a 1 6 ]
+"7
+[v ___lbdiv@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lbdiv@dividend dividend `uc  1 a 1 4 ]
+[v ___lbdiv@divisor divisor `uc  1 p 1 2 ]
+"26
+} 0
+"113 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c
+[v _estado_captura_mostra estado_captura_mostra `(v  1 e 0 0 ]
+{
+[v estado_captura_mostra@opt opt `uc  1 a 1 58 ]
+[v estado_captura_mostra@opt opt `uc  1 a 1 58 ]
+"118
+} 0
+"124
+[v _estado_menu_principal estado_menu_principal `(v  1 e 0 0 ]
+{
+[v estado_menu_principal@opt opt `uc  1 a 1 64 ]
+"185
+[v estado_menu_principal@i_806 i `uc  1 a 1 69 ]
+"160
+[v estado_menu_principal@i i `uc  1 a 1 68 ]
+"127
+[v estado_menu_principal@t_int t_int `ui  1 a 2 70 ]
+"128
+[v estado_menu_principal@menor menor `ui  1 a 2 62 ]
+[v estado_menu_principal@maior maior `ui  1 a 2 60 ]
+"125
+[v estado_menu_principal@qtd_val qtd_val `uc  1 a 1 67 ]
+"126
+[v estado_menu_principal@qtd_sens qtd_sens `uc  1 a 1 66 ]
+"129
+[v estado_menu_principal@posicao posicao `uc  1 a 1 65 ]
+"124
+[v estado_menu_principal@opt opt `uc  1 a 1 64 ]
+"245
+} 0
+"95
+[v _estado_inicial estado_inicial `(v  1 e 0 0 ]
+{
+[v estado_inicial@opt opt `uc  1 a 1 0 ]
+[v estado_inicial@opt opt `uc  1 a 1 0 ]
+"97
+} 0
+"357
+[v _estado_executa_muda estado_executa_muda `(v  1 e 0 0 ]
+{
+[v estado_executa_muda@novo_estado novo_estado `E1660  1 a 1 45 ]
+"395
+[v estado_executa_muda@i i `uc  1 a 1 57 ]
+"429
+[v estado_executa_muda@i_835 i `uc  1 a 1 56 ]
+"365
+[v estado_executa_muda@tmp tmp `[17]uc  1 a 17 24 ]
+"359
+[v estado_executa_muda@menor menor `ui  1 a 2 50 ]
+[v estado_executa_muda@maior maior `ui  1 a 2 48 ]
+[v estado_executa_muda@temp_int temp_int `ui  1 a 2 43 ]
+"360
+[v estado_executa_muda@endereco endereco `uc  1 a 1 47 ]
+[v estado_executa_muda@qtd_sens qtd_sens `uc  1 a 1 46 ]
+"361
+[v estado_executa_muda@posicao posicao `uc  1 a 1 42 ]
+"360
+[v estado_executa_muda@qtd_val qtd_val `uc  1 a 1 41 ]
+"357
+[v estado_executa_muda@novo_estado novo_estado `E1660  1 a 1 45 ]
+"365
+[v estado_executa_muda@F1751 F1751 `[17]uc  1 s 17 F1751 ]
+"454
+} 0
+"18 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c
+[v _adcon_captura_grava adcon_captura_grava `(v  1 e 0 0 ]
+{
+"49
+[v adcon_captura_grava@i_536 i `uc  1 a 1 52 ]
+"43
+[v adcon_captura_grava@x x `ui  1 a 2 46 ]
+"42
+[v adcon_captura_grava@i i `uc  1 a 1 51 ]
+"19
+[v adcon_captura_grava@t_int t_int `ui  1 a 2 53 ]
+"20
+[v adcon_captura_grava@menor menor `ui  1 a 2 44 ]
+[v adcon_captura_grava@maior maior `ui  1 a 2 42 ]
+"21
+[v adcon_captura_grava@qtd_val qtd_val `uc  1 a 1 50 ]
+[v adcon_captura_grava@qtd_sens qtd_sens `uc  1 a 1 49 ]
+"22
+[v adcon_captura_grava@posicao posicao `uc  1 a 1 48 ]
+"77
+} 0
+"23 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/eeprom.c
+[v i1_eeprom_gravar_word eeprom_gravar_word `(v  1 e 0 0 ]
+{
+[v i1eeprom_gravar_word@end eeprom_gravar_word `uc  1 a 1 6 ]
+[v i1eeprom_gravar_word@end eeprom_gravar_word `uc  1 a 1 6 ]
+[v i1eeprom_gravar_word@dado eeprom_gravar_word `ui  1 p 2 3 ]
+"34
+} 0
+"7 /opt/microchip/xc8/v1.20/sources/pic/eewrite.c
+[v i1_eeprom_write eeprom_write `(v  1 e 0 0 ]
+{
+[v i1eeprom_write@addr eeprom_write `uc  1 a 1 2 ]
+[v i1eeprom_write@addr eeprom_write `uc  1 a 1 2 ]
+[v i1eeprom_write@value eeprom_write `uc  1 p 1 0 ]
+"9
+} 0
+"108 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c
+[v _adcon_mostra adcon_mostra `(v  1 e 0 0 ]
+{
+"112
+[v adcon_mostra@temp_str temp_str `[9]uc  1 a 9 27 ]
+[s S484 . 4 `i 1 rem 2 0 `i 1 quot 2 2 ]
+"114
+[v adcon_mostra@temp_div temp_div `S484  1 a 4 36 ]
+"108
+[v adcon_mostra@t_int t_int `ui  1 p 2 20 ]
+[v adcon_mostra@i i `uc  1 p 1 22 ]
+"112
+[v adcon_mostra@F1828 F1828 `[9]uc  1 s 9 F1828 ]
+"135
+} 0
+"60 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c
+[v i1_lcd_puts lcd_puts `(v  1 e 0 0 ]
+{
+[v i1lcd_puts@cmd lcd_puts `uc  1 a 1 8 ]
+[v i1lcd_puts@str lcd_puts `*.26DCCuc  1 p 2 4 ]
+"92
+} 0
+"46
+[v i1_lcd_goto lcd_goto `(v  1 e 0 0 ]
+{
+[v i1lcd_goto@y lcd_goto `uc  1 a 1 4 ]
+[v i1lcd_goto@y lcd_goto `uc  1 a 1 4 ]
+[v i1lcd_goto@x lcd_goto `uc  1 p 1 2 ]
+"58
+} 0
+"493 /opt/microchip/xc8/v1.20/sources/common/doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.4uc  1 a 1 18 ]
+[s S854 . 4 `*.1DCCuc 1 _cp 2 0 `ui 1 _len 2 2 ]
+"533
+[u S857 . 4 `ui 1 _val 2 0 `S854 1 _str 4 0 ]
+[v sprintf@_val _val `S857  1 a 4 14 ]
+"499
+[v sprintf@c c `c  1 a 1 19 ]
+"508
+[v sprintf@flag flag `uc  1 a 1 13 ]
+"494
+[v sprintf@ap ap `[1]*.4v  1 a 1 12 ]
+"506
+[v sprintf@prec prec `c  1 a 1 11 ]
+"493
+[v sprintf@sp sp `*.4uc  1 a 1 18 ]
+[v sprintf@f f `*.25DCCuc  1 p 2 0 ]
+"1548
+} 0
+"5 /opt/microchip/xc8/v1.20/sources/pic/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"6
+[v ___lwmod@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 8 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 10 ]
+"21
+} 0
+"5 /opt/microchip/xc8/v1.20/sources/pic/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"6
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"7
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"26
+} 0
+"27 /opt/microchip/xc8/v1.20/include/stdlib.h
+[s S484 . 4 `i 1 rem 2 0 `i 1 quot 2 2 ]
+"5 /opt/microchip/xc8/v1.20/sources/common/cdiv.c
+[v _div div `(S484  1 e 4 0 ]
+{
+"6
+[v div@rv rv `S484  1 a 4 0 ]
+"5
+[v div@number number `i  1 p 2 9 ]
+[v div@denom denom `i  1 p 2 11 ]
+"11
+} 0
+"5 /opt/microchip/xc8/v1.20/sources/pic/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"6
+[v ___awmod@sign sign `uc  1 a 1 6 ]
+[v ___awmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"30
+} 0
+"5 /opt/microchip/xc8/v1.20/sources/pic/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"6
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"7
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"37
+} 0
+"79 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c
+[v _adcon_ler_canal adcon_ler_canal `(ui  1 e 2 0 ]
+{
+[v adcon_ler_canal@cnl cnl `uc  1 a 1 6 ]
+"96
+[v adcon_ler_canal@i i `ui  1 a 2 11 ]
+"92
+[v adcon_ler_canal@acc acc `ul  1 a 4 7 ]
+"79
+[v adcon_ler_canal@cnl cnl `uc  1 a 1 6 ]
+"106
+} 0
+"4 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/eeprom.c
+[v _eeprom_ler_word eeprom_ler_word `(ui  1 e 2 0 ]
+{
+[v eeprom_ler_word@end end `uc  1 a 1 6 ]
+"13
+[v eeprom_ler_word@temp_int temp_int `ui  1 a 2 7 ]
+"4
+[v eeprom_ler_word@end end `uc  1 a 1 6 ]
+"21
+} 0
+"7 /opt/microchip/xc8/v1.20/sources/pic/eeread.c
+[v i1_eeprom_read eeprom_read `(uc  1 e 1 0 ]
+{
+[v i1eeprom_read@addr eeprom_read `uc  1 a 1 1 ]
+[v i1eeprom_read@addr eeprom_read `uc  1 a 1 1 ]
+"12
+} 0
+"39 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c
+[v _lcd_clear lcd_clear `(v  1 e 0 0 ]
+{
+"44
+} 0
+"13
+[v i1_lcd_write lcd_write `(v  1 e 0 0 ]
+{
+[v i1lcd_write@c lcd_write `uc  1 a 1 1 ]
+[v i1lcd_write@c lcd_write `uc  1 a 1 1 ]
+"37
+} 0
+"26 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c
+[v _rs232_transmite rs232_transmite `(uc  1 e 1 0 ]
+{
+"30
+[v rs232_transmite@i i `uc  1 a 1 10 ]
+"27
+[v rs232_transmite@x x `uc  1 a 1 9 ]
+"29
+[v rs232_transmite@qtd_bytes qtd_bytes `uc  1 a 1 8 ]
+[v rs232_transmite@qtd_sens qtd_sens `uc  1 a 1 7 ]
+"27
+[v rs232_transmite@qtd_val qtd_val `uc  1 a 1 6 ]
+"63
+} 0
+"7 /home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c
+[v _btns_testa btns_testa `(uc  1 e 1 0 ]
+{
+"23
+} 0
+"3 /opt/microchip/xc8/v1.20/sources/pic/bmul.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 3 ]
+"4
+[v ___bmul@product product `uc  1 a 1 2 ]
+"3
+[v ___bmul@multiplier multiplier `uc  1 a 1 3 ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"13
+} 0

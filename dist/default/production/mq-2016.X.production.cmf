@@ -1,0 +1,1366 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$/tmp/cgtuW9Y6a.obj
+end_init CODE 0 12 12 3 2
+reset_vec CODE 0 0 0 3 2
+config CONFIG 0 2007 2007 1 2
+$dist/default/production/mq-2016.X.production.obj
+intentry CODE 0 4 4 E 2
+text43 CODE 0 1569 1569 19 2
+text42 CODE 0 16CD 16CD 2E 2
+text41 CODE 0 BDD BDD 80 2
+text40 CODE 0 16A2 16A2 2B 2
+text39 CODE 0 1582 1582 19 2
+text38 CODE 0 15E7 15E7 1F 2
+text37 CODE 0 1678 1678 2A 2
+text36 CODE 0 C5D C5D 87 2
+text35 CODE 0 AF6 AF6 72 2
+text34 CODE 0 A29 A29 64 2
+text33 CODE 0 806 806 3C 2
+text32 CODE 0 885 885 4D 2
+text31 CODE 0 842 842 43 2
+text30 CODE 0 ED6 ED6 12A 2
+text29 CODE 0 1651 1651 27 2
+text28 CODE 0 8D2 8D2 4D 2
+text27 CODE 0 CE4 CE4 91 2
+text26 CODE 0 1759 1759 31 2
+text25 CODE 0 1553 1553 16 2
+text24 CODE 0 696 696 130 2
+text23 CODE 0 15 15 2E7 2
+text22 CODE 0 14E2 14E2 7 2
+text21 CODE 0 2FC 2FC 1C2 2
+text20 CODE 0 152E 152E 12 2
+text19 CODE 0 16FB 16FB 2F 2
+text18 CODE 0 971 971 57 2
+text17 CODE 0 150C 150C 11 2
+text16 CODE 0 151D 151D 11 2
+text15 CODE 0 9C8 9C8 61 2
+text14 CODE 0 91F 91F 52 2
+text13 CODE 0 B68 B68 75 2
+text12 CODE 0 D75 D75 A6 2
+text11 CODE 0 7C6 7C6 34 2
+text10 CODE 0 159B 159B 19 2
+text9 CODE 0 4BE 4BE 41 2
+text8 CODE 0 178A 178A 3B 2
+text7 CODE 0 A8D A8D 69 2
+text6 CODE 0 172A 172A 2F 2
+text5 CODE 0 1606 1606 25 2
+text4 CODE 0 17C5 17C5 3B 2
+text3 CODE 0 15CD 15CD 1A 2
+text2 CODE 0 15B4 15B4 19 2
+text1 CODE 0 14F1 14F1 D 2
+maintext CODE 0 E1B E1B BB 2
+cstackBANK0 BANK0 1 20 20 4E 1
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK1 BANK1 1 DF DF C 1
+cstackBANK3 BANK3 1 1A1 1A1 2 1
+inittext CODE 0 1540 1540 13 2
+clrtext CODE 0 14E9 14E9 8 2
+bssBANK3 BANK3 1 190 190 11 1
+dataBANK1 BANK1 1 D1 D1 E 1
+bssBANK1 BANK1 1 A0 A0 31 1
+bssBANK0 BANK0 1 6E 6E 2 1
+cinit CODE 0 162B 162B 26 2
+stringtext STRCODE 0 500 500 196 2
+idataBANK1 CODE 0 14FE 14FE E 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK1 00EB-00EF 1
+BANK2 0110-016F 1
+BANK3 01A3-01EF 1
+CODE 0003-0003 2
+CODE 04FF-04FF 2
+CODE 07FA-0805 2
+CODE 1000-14E1 2
+CODE 1800-1FFF 2
+CONFIG 2008-2008 2
+CONST 0003-0003 2
+CONST 04FF-04FF 2
+CONST 07FA-0805 2
+CONST 1000-14E1 2
+CONST 1800-1FFF 2
+EEDATA 2100-21FF 2
+ENTRY 0003-0003 2
+ENTRY 04FF-04FF 2
+ENTRY 07FA-0805 2
+ENTRY 1000-14E1 2
+ENTRY 1800-1FFF 2
+IDLOC 2000-2003 2
+RAM 00EB-00EF 1
+RAM 0110-016F 1
+RAM 01A3-01EF 1
+SFR0 0000-001F 1
+SFR1 0080-009F 1
+SFR2 0100-010F 1
+SFR3 0180-018F 1
+STRCODE 0003-0003 2
+STRCODE 04FF-04FF 2
+STRCODE 07FA-0805 2
+STRCODE 1000-14E1 2
+STRCODE 1800-1FFF 2
+STRING 0003-0003 2
+STRING 04FF-04FF 2
+STRING 07FA-0805 2
+STRING 1000-14E1 2
+STRING 1800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production/mq-2016.X.production.obj
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":14 4 intentry CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":365 15 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":368 2E text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":370 2F text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":371 34 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":372 46 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":374 47 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":375 48 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":377 49 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":378 4A text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":380 4B text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":381 50 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":382 5B text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":383 60 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":384 69 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":388 6A text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":389 75 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":392 90 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":395 A4 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":397 A6 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":399 B4 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":400 FF text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":401 124 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":402 12D text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":395 134 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":405 141 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":407 142 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":408 147 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":409 155 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":411 163 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":412 169 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":413 173 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":415 17D text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":416 17E text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":417 1C4 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":418 1CD text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":419 1D4 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":420 21A text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":422 224 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":424 225 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":425 22C text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":426 233 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":427 23D text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":428 247 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":429 251 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":430 25C text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":429 264 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":432 271 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":433 276 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":434 27F text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":437 280 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":438 285 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":439 2AA text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":449 2AB text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":450 2B0 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":451 2D5 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":452 2D6 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":368 2D7 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":453 2F3 text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":454 2FB text23 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":124 2FC text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":131 2FF text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":133 300 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":134 304 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":135 306 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":137 30D text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":140 30E text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":141 316 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":142 31A text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":144 321 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":148 322 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":153 323 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":157 328 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":158 333 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":160 34E text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":161 350 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":163 35E text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":160 36D text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":172 37B text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":173 381 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":176 382 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":181 387 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":182 392 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":183 3A0 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":185 3AE text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":186 3B0 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":187 3C2 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":188 3C3 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":189 3C8 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":190 3D1 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":191 3D2 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":193 3D3 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":194 3E3 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":195 3ED text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":197 3FA text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":198 406 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":200 412 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":201 423 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":202 429 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":204 433 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":185 445 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":213 453 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":214 459 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":217 45A text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":218 460 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":221 461 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":222 467 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":225 468 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":226 46E text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":229 46F text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":230 47D text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":231 483 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":234 484 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":235 48F text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":236 495 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":242 496 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":148 497 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":243 4B0 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":244 4B1 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":131 4B2 text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":245 4BD text21 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":13 4BE text9 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":14 4C1 text9 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":15 4C5 text9 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":16 4C8 text9 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":17 4C9 text9 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":19 4CC text9 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":20 4D2 text9 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":21 4D5 text9 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":22 4D6 text9 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":24 4D9 text9 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":25 4DF text9 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":26 4E2 text9 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":27 4E3 text9 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":29 4E6 text9 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":30 4EC text9 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":31 4EF text9 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":32 4F0 text9 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":34 4F4 text9 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":35 4FA text9 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":36 4FD text9 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":37 4FE text9 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/menu.h":28 500 stringtext STRCODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/tempo_amostra.h":23 512 stringtext STRCODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/quant_sensores.h":24 52E stringtext STRCODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":354 53A stringtext STRCODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.h":85 544 stringtext STRCODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.h":17 54C stringtext STRCODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/mq6.h":18 550 stringtext STRCODE
+"/opt/microchip/xc8/v1.20/sources/common/exp.c":17 552 stringtext STRCODE
+"/opt/microchip/xc8/v1.20/sources/common/log.c":9 570 stringtext STRCODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":29 696 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":30 6A1 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":32 6BC text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":33 6C7 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":34 6D5 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":39 6E3 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":41 6E8 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":42 6F0 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":43 6F4 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":44 702 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":42 711 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":47 71F text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":48 720 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":49 728 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":51 72C text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":52 732 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":53 733 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":54 738 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":55 741 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":56 742 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":58 743 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":59 753 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":60 75D text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":62 76A text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":63 776 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":65 782 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":67 793 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":68 799 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":70 7A3 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":49 7B5 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":75 7C4 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":77 7C5 text24 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c":31 7C6 text11 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c":32 7CC text11 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c":34 7ED text11 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c":35 7EE text11 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c":40 7F0 text11 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c":41 7F4 text11 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c":44 7F8 text11 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c":46 7F9 text11 CODE
+"/opt/microchip/xc8/v1.20/sources/common/cdiv.c":8 806 text33 CODE
+"/opt/microchip/xc8/v1.20/sources/common/cdiv.c":9 81F text33 CODE
+"/opt/microchip/xc8/v1.20/sources/common/cdiv.c":10 838 text33 CODE
+"/opt/microchip/xc8/v1.20/sources/common/cdiv.c":11 841 text33 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwmod.c":8 842 text31 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwmod.c":9 848 text31 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwmod.c":10 84A text31 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwmod.c":11 84B text31 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwmod.c":12 852 text31 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwmod.c":10 857 text31 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwmod.c":15 85D text31 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwmod.c":16 867 text31 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwmod.c":17 86E text31 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwmod.c":18 875 text31 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwmod.c":20 87D text31 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwmod.c":21 884 text31 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwdiv.c":9 885 text32 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwdiv.c":10 887 text32 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwdiv.c":11 88D text32 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwdiv.c":12 88F text32 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwdiv.c":13 890 text32 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwdiv.c":14 897 text32 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwdiv.c":12 89C text32 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwdiv.c":17 8A2 text32 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwdiv.c":18 8A9 text32 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwdiv.c":19 8B3 text32 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwdiv.c":20 8B9 text32 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwdiv.c":22 8BB text32 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwdiv.c":23 8C2 text32 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwdiv.c":25 8CA text32 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lwdiv.c":26 8D1 text32 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":62 8D2 text28 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":64 8D5 text28 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":65 8D6 text28 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":72 8EA text28 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":73 8F0 text28 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":81 8F4 text28 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":82 904 text28 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":84 908 text28 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":64 90D text28 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":92 91E text28 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":326 91F text14 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":327 922 text14 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":330 923 text14 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":331 927 text14 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":332 929 text14 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":334 930 text14 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":337 931 text14 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":338 939 text14 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":339 93D text14 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":341 944 text14 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":343 945 text14 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":344 94B text14 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":346 94C text14 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":347 958 text14 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":348 95E text14 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":349 95F text14 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":327 960 text14 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":350 970 text14 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":251 971 text18 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":252 974 text18 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":254 975 text18 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":255 97B text18 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":256 97D text18 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":258 984 text18 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":262 985 text18 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":263 9A2 text18 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":264 9AA text18 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":266 9B1 text18 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":268 9B2 text18 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":269 9B8 text18 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":270 9B9 text18 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":252 9BA text18 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":271 9C7 text18 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":287 9C8 text15 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":288 9CB text15 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":290 9CC text15 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":291 9D4 text15 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":292 9DA text15 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":294 9E1 text15 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":297 9E2 text15 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":298 9ED text15 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":299 9F3 text15 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":301 9FA text15 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":303 9FB text15 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":304 A01 text15 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":306 A02 text15 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":307 A10 text15 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":308 A16 text15 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":309 A17 text15 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":288 A18 text15 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":310 A28 text15 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awmod.c":8 A29 text34 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awmod.c":9 A2A text34 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awmod.c":10 A2E text34 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awmod.c":11 A33 text34 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awmod.c":13 A36 text34 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awmod.c":14 A3A text34 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awmod.c":15 A40 text34 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awmod.c":16 A46 text34 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awmod.c":17 A48 text34 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awmod.c":18 A49 text34 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awmod.c":19 A50 text34 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awmod.c":17 A55 text34 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awmod.c":22 A5B text34 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awmod.c":23 A65 text34 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awmod.c":24 A6C text34 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awmod.c":25 A73 text34 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awmod.c":27 A7B text34 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awmod.c":28 A7F text34 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awmod.c":29 A85 text34 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awmod.c":30 A8C text34 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":62 A8D text7 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":64 A90 text7 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":65 A91 text7 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":72 AAF text7 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":73 AB5 text7 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":81 ABB text7 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":82 AD1 text7 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":84 AD7 text7 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":64 ADE text7 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":92 AF5 text7 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":9 AF6 text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":10 AF7 text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":11 AFB text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":12 B00 text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":14 B03 text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":15 B07 text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":16 B0C text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":18 B11 text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":19 B13 text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":20 B19 text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":21 B1B text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":22 B1C text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":23 B23 text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":21 B28 text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":26 B2E text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":27 B35 text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":28 B3F text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":29 B45 text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":31 B47 text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":32 B4E text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":34 B56 text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":35 B5A text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":36 B60 text35 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/awdiv.c":37 B67 text35 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":38 B68 text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":40 B6B text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":43 B6C text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":44 B73 text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":47 B74 text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":48 B7C text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":51 B7D text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":52 B85 text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":61 B86 text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":62 B8E text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":65 B8F text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":66 B97 text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":69 B98 text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":70 BA0 text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":73 BA1 text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":74 BA9 text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":77 BAA text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":78 BB2 text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":86 BB3 text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":87 BBB text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":88 BBC text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":40 BBD text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":89 BDC text13 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":30 BDD text41 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":32 BDE text41 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":33 BE7 text41 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":46 BED text41 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":47 BF6 text41 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":49 C0F text41 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":50 C17 text41 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":51 C1A text41 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":53 C22 text41 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":54 C23 text41 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":55 C2D text41 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":56 C31 text41 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":58 C39 text41 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":59 C43 text41 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":60 C47 text41 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":53 C4F text41 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":63 C5C text41 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":92 C5D text36 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":93 C66 text36 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":94 C7C text36 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":96 C81 text36 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":98 C8E text36 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":99 C91 text36 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":100 C97 text36 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":96 CBB text36 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":104 CCB text36 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":106 CE3 text36 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":112 CE4 text27 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":116 CFB text27 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":120 D14 text27 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":133 D46 text27 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":134 D6B text27 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":135 D74 text27 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":29 D75 text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":30 D7B text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":31 D81 text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":43 D87 text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":47 D8D text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":48 D8E text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":51 D8F text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":52 D93 text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":55 D97 text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":57 DA5 text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":66 DCA text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":67 DD4 text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":76 DDA text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":77 DDB text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":92 DE0 text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":94 DE5 text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":95 DE9 text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":96 DEB text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":100 DEC text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":102 DF0 text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":106 DF4 text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":108 E00 text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":109 E04 text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":113 E0B text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":117 E0D text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/handler.c":130 E0E text12 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":37 E1B maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":38 E20 maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":39 E25 maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":41 E2A maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":43 E35 maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":51 E40 maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":52 E49 maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":58 E54 maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":59 E5F maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":60 E68 maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":61 E71 maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":62 E7D maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":63 E89 maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":65 E95 maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":66 EA0 maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":65 EAC maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":73 EB9 maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":74 EC5 maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":79 EC7 maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":81 ECC maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":85 ED1 maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":87 ED2 maintext CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/main.c":100 ED3 maintext CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":542 ED6 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":545 EDD text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":547 EDE text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":550 EE4 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":551 EEF text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":557 EF0 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":644 EF1 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":647 EF2 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":706 EF3 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":708 EF4 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":822 EF5 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":827 EF6 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":828 EF7 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":831 EF8 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":644 EF9 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":1258 F18 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":1266 F1C text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":1268 F28 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":1269 F2C text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":1270 F30 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":1273 F36 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":1293 F37 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":1312 F44 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":1313 F4E text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":1314 F6E text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":1312 F6F text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":1445 F7A text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":1446 F80 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":1479 F8C text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":1481 F90 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":1496 F91 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":1531 FC7 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":1481 FD3 text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":545 FDF text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":1545 FFA text30 CODE
+"/opt/microchip/xc8/v1.20/sources/common/doprnt.c":1548 FFF text30 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":96 14E2 text22 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":97 14E8 text22 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/timer.c":18 14F1 text1 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/timer.c":20 14F5 text1 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/timer.c":21 14F8 text1 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/timer.c":22 14F9 text1 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/timer.c":24 14FB text1 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/timer.c":26 14FC text1 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/timer.c":27 14FD text1 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":277 150C text17 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":278 150F text17 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":279 1515 text17 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":281 151C text17 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":103 151D text16 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":104 1520 text16 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":105 1526 text16 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":107 152D text16 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":113 152E text20 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":114 1531 text20 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":115 1537 text20 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":116 1538 text20 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/estados.c":118 153F text20 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/eeprom.c":30 1553 text25 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/eeprom.c":32 155E text25 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/eeprom.c":34 1568 text25 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/bmul.c":3 1569 text43 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/bmul.c":4 156A text43 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/bmul.c":7 156C text43 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/bmul.c":8 1570 text43 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/bmul.c":9 1575 text43 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/bmul.c":10 1577 text43 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/bmul.c":11 1579 text43 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/bmul.c":12 157F text43 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/bmul.c":13 1581 text43 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":40 1582 text39 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":41 1585 text39 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":42 158B text39 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":43 1591 text39 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":44 159A text39 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":10 159B text10 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":12 159E text10 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":13 15A1 text10 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":14 15A2 text10 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":15 15A3 text10 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":16 15A4 text10 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":17 15A7 text10 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":18 15A8 text10 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":19 15AB text10 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":20 15AC text10 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":21 15AD text10 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":22 15AF text10 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":23 15B0 text10 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/rs232.c":24 15B3 text10 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":138 15B4 text2 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":140 15B8 text2 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":142 15BC text2 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":144 15BF text2 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":150 15C0 text2 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":151 15C6 text2 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":152 15C9 text2 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/adcon.c":153 15CC text2 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/eeprom.c":30 15CD text3 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/eeprom.c":32 15DA text3 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/eeprom.c":34 15E6 text3 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/eeread.c":9 15E7 text38 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/eeread.c":10 15E9 text38 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/eeread.c":11 15F0 text38 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/eeread.c":12 1605 text38 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/eeread.c":9 1606 text5 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/eeread.c":10 160A text5 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/eeread.c":11 1611 text5 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/eeread.c":12 162A text5 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/menu.h":28 162B cinit CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":46 1651 text29 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":47 1652 text29 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":48 1655 text29 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":50 1656 text29 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":51 165C text29 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":53 165D text29 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":54 1663 text29 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":55 1664 text29 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":48 1665 text29 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":56 166D text29 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":57 1673 text29 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":58 1677 text29 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/eeprom.c":13 1678 text37 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/eeprom.c":14 167B text37 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/eeprom.c":17 1687 text37 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/eeprom.c":20 169A text37 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/eeprom.c":21 16A1 text37 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":13 16A2 text40 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":14 16A3 text40 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":15 16A7 text40 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":16 16AA text40 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":17 16AB text40 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":19 16AE text40 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":20 16B2 text40 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":21 16B3 text40 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":22 16B4 text40 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":24 16B5 text40 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":25 16B9 text40 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":26 16BA text40 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":27 16BB text40 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":29 16BC text40 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":30 16C0 text40 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":31 16C1 text40 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":32 16C2 text40 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":34 16C4 text40 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":35 16C8 text40 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":36 16CB text40 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":37 16CC text40 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c":9 16CD text42 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c":10 16DA text42 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c":11 16E0 text42 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c":13 16E3 text42 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c":14 16E7 text42 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c":16 16EA text42 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c":17 16EE text42 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c":19 16F1 text42 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c":20 16F5 text42 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c":22 16F8 text42 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/botoes.c":23 16FA text42 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lbdiv.c":9 16FB text19 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lbdiv.c":10 16FD text19 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lbdiv.c":11 1701 text19 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lbdiv.c":12 1703 text19 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lbdiv.c":13 1704 text19 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lbdiv.c":14 1706 text19 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lbdiv.c":12 170B text19 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lbdiv.c":17 1711 text19 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lbdiv.c":18 1713 text19 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lbdiv.c":19 1719 text19 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lbdiv.c":20 171B text19 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lbdiv.c":22 171D text19 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lbdiv.c":23 171F text19 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lbdiv.c":25 1727 text19 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/lbdiv.c":26 1729 text19 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":46 172A text6 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":47 172D text6 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":48 1730 text6 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":50 1731 text6 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":51 1737 text6 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":53 1738 text6 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":54 173E text6 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":55 173F text6 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":48 1740 text6 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":56 174A text6 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":57 1752 text6 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":58 1758 text6 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/eewrite.c":7 1759 text26 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/eewrite.c":8 175A text26 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/eewrite.c":9 1789 text26 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":95 178A text8 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":96 1792 text8 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":97 179A text8 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":98 17A0 text8 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":99 17A6 text8 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":100 17AC text8 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":101 17B2 text8 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":102 17B8 text8 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":103 17BE text8 CODE
+"/home/ifrs/Documentos/copia_servidor/Projeto_Sensores/Ultima_Versao/mq-2016.X/lcd.c":104 17C4 text8 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/eewrite.c":7 17C5 text4 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/eewrite.c":8 17C8 text4 CODE
+"/opt/microchip/xc8/v1.20/sources/pic/eewrite.c":9 17FF text4 CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___lbdiv@counter 75 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+___lwdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+_eeprom_gravar_word 2B9A 0 CODE 0 text3 dist/default/production/mq-2016.X.production.obj
+___awdiv@counter 75 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+sprintf@f 20 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+___lwdiv@counter 77 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+_RD C60 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_WR C61 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_RB0 30 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_RC0 38 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_RB1 31 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_RC1 39 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_RB2 32 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_RC2 3A 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_RB4 34 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__size_of_estado_menu_limpar 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_RB5 35 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_RB6 36 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_RB7 37 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__S0 2008 0 ABS 0 - -
+__S1 1A3 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_TX9 4C6 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_GIE 5F 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__Hintentry 24 0 CODE 0 intentry -
+__Lintentry 8 0 CODE 0 intentry -
+__size_of_lcd_clear 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__pintentry 8 0 CODE 0 intentry dist/default/production/mq-2016.X.production.obj
+__end_of___awdiv 16D0 0 CODE 0 text35 dist/default/production/mq-2016.X.production.obj
+_div 100C 0 CODE 0 text33 dist/default/production/mq-2016.X.production.obj
+__size_of_lcd_write 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__CFG_PWRTE$ON 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_gl_item_menu_config_amostra CB 0 BANK1 1 bssBANK1 dist/default/production/mq-2016.X.production.obj
+_TMR0 1 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_estado_captura_mostra 2A5C 0 CODE 0 text20 dist/default/production/mq-2016.X.production.obj
+_IOCB 96 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_RBIE 5B 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_RBIF 58 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+estado_executa_muda@tmp 38 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+_BRGH 4C2 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_gl_item_menu_config_sensores 6E 0 BANK0 1 bssBANK0 dist/default/production/mq-2016.X.production.obj
+__size_of___lbdiv 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_SYNC 4C4 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_WPUB 95 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_CREN C4 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_SPEN C7 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_WREN C62 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_TXEN 4C5 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+estado_menu_principal@qtd_val 63 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+_main 1C36 0 CODE 0 maintext dist/default/production/mq-2016.X.production.obj
+?_div 79 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__end_ofexp@coeff AE0 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+start 24 0 CODE 0 init /tmp/cgtuW9Y6a.obj
+__size_of_estado_ver_todos 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_BRG16 C3B 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+estado_menu_principal@posicao 61 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__size_of_estado_executa_muda 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_eeprom_ler_word 2CF0 0 CODE 0 text37 dist/default/production/mq-2016.X.production.obj
+eeprom_ler_word@end 76 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+log@coeff AE0 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+exp@coeff AA4 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+_RCREG 1A 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_TRISA 85 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_TXREG 19 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec /tmp/cgtuW9Y6a.obj
+_SPBRG 99 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_ANSEL 188 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_EEADR 10D 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_estado_max_min 2A18 0 CODE 0 text17 dist/default/production/mq-2016.X.production.obj
+estado_menu_principal@opt 60 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+interrupt_function 8 0 CODE 0 intentry dist/default/production/mq-2016.X.production.obj
+_CARRY 18 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+estado_menu_principal@qtd_sens 62 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__Hconfig 4010 0 CONFIG 0 config -
+__Lconfig 400E 0 CONFIG 0 config -
+_estado_executa_muda$1447 54 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+?___awmod 70 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+__end_of__stringtab A24 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+main@i 1A2 0 BANK3 1 cstackBANK3 dist/default/production/mq-2016.X.production.obj
+estado_captura_mostra@opt 5A 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+_estado_executa_muda$1448 56 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+?___lwmod 78 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+__size_of_estado_menu_principal 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__size_of_eeprom_read 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_adcon_mostra 19C8 0 CODE 0 text27 dist/default/production/mq-2016.X.production.obj
+estado_executa_muda@novo_estado 4D 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__end_of_estado_menu_conf_tempo_amostra 1452 0 CODE 0 text15 dist/default/production/mq-2016.X.production.obj
+_menu_quant_sensores A5C 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+__end_of_lcd_puts 15EC 0 CODE 0 text7 dist/default/production/mq-2016.X.production.obj
+__size_of_adcon_captura_grava 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__end_of__stringdata D2C 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+div@rv 20 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+_errno C9 0 BANK1 1 bssBANK1 dist/default/production/mq-2016.X.production.obj
+?_sprintf 20 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+estado_menu_conf_tempo_amostra@opt 5A 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+i1_lcd_write 2D44 0 CODE 0 text40 dist/default/production/mq-2016.X.production.obj
+div@denom 7B 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+_TRISB0 430 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+_TRISC0 438 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__Lfunctab 0 0 CODE 0 functab -
+_TRISB1 431 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_TRISC1 439 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_TRISB2 432 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_TRISC2 43A 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_EECON1 18C 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_TRISB4 434 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_EECON2 18D 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_TRISB5 435 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_TRISB6 436 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_TRISC6 43E 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_TRISB7 437 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_TRISC7 43F 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+_PIE1bits 8C 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+estado_menu_principal@i 64 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_PIR1bits C 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+?___lbdiv 72 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+sprintf@ap 2C 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+rs232_transmite@i 7A 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+rs232_transmite@x 79 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+_lcd_init 2F14 0 CODE 0 text8 dist/default/production/mq-2016.X.production.obj
+_EEDATA 10C 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_estado_menu_conf_tempo_amostra 1390 0 CODE 0 text15 dist/default/production/mq-2016.X.production.obj
+_lcd_goto 2E54 0 CODE 0 text6 dist/default/production/mq-2016.X.production.obj
+?___awdiv 70 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+__size_of_eeprom_gravar_word 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_ANSELH 189 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+?___lwdiv 70 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+__size_of_rs232_init 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_ADRESH 1E 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__size_of_timer0_init 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__size_of_eeprom_ler_word 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+_ADRESL 9E 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__size_of_eeprom_write 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__size_of_estado_captura_mostra 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+_lcd_puts 151A 0 CODE 0 text7 dist/default/production/mq-2016.X.production.obj
+lcd_goto@x E6 0 BANK1 1 cstackBANK1 dist/default/production/mq-2016.X.production.obj
+__size_of_estado_maquina 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_menu_tempo_amostra A24 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+__size_of_estado_inicial 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+lcd_goto@y E8 0 BANK1 1 cstackBANK1 dist/default/production/mq-2016.X.production.obj
+_estado_menu_conf_quant_sensores 123E 0 CODE 0 text14 dist/default/production/mq-2016.X.production.obj
+__size_of_estado_max_min 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__end_of_dpowers A88 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+__end_of___awmod 151A 0 CODE 0 text34 dist/default/production/mq-2016.X.production.obj
+init_fetch0 2A80 0 CODE 0 inittext dist/default/production/mq-2016.X.production.obj
+?_eeprom_gravar_word E7 0 BANK1 1 cstackBANK1 dist/default/production/mq-2016.X.production.obj
+?_adcon_mostra 34 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+sprintf@sp 32 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+___awmod@sign 76 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+_lcd_write 97C 0 CODE 0 text9 dist/default/production/mq-2016.X.production.obj
+estado_executa_muda@qtd_val 49 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+_gl_estado CF 0 BANK1 1 bssBANK1 dist/default/production/mq-2016.X.production.obj
+_canais A98 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+saved_w 7E 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+___bmul 2AD2 0 CODE 0 text43 dist/default/production/mq-2016.X.production.obj
+__Hinit 24 0 CODE 0 init -
+__Linit 24 0 CODE 0 init -
+_lcd_clear 2B04 0 CODE 0 text39 dist/default/production/mq-2016.X.production.obj
+__end_of_mq_gl_r0 AA4 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+estado_executa_muda@posicao 4A 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__end_of_main 1DAC 0 CODE 0 maintext dist/default/production/mq-2016.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+_rs232_transmite 17BA 0 CODE 0 text41 dist/default/production/mq-2016.X.production.obj
+estado_executa_muda@qtd_sens 4E 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__size_of_rs232_transmite 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+___bmul@multiplier 73 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+end_of_initialization 2C9A 0 CODE 0 cinit dist/default/production/mq-2016.X.production.obj
+estado_executa_muda@F1751 190 0 BANK3 1 bssBANK3 dist/default/production/mq-2016.X.production.obj
+div@number 79 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+___awdiv@sign 76 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+adcon_mostra@temp_div 44 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+adcon_mostra@temp_str 3B 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+___bmul@multiplicand 70 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+estado_executa_muda@temp_int 4B 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__stringtab A00 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+_LCD_POSICAO A88 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+_eeprom_write 2F8A 0 CODE 0 text4 dist/default/production/mq-2016.X.production.obj
+__end_of_handler 1C36 0 CODE 0 text12 dist/default/production/mq-2016.X.production.obj
+i1eeprom_gravar_word@dado 73 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+__HdataBANK1 0 0 ABS 0 dataBANK1 -
+__LdataBANK1 0 0 ABS 0 dataBANK1 -
+i1lcd_puts@str 74 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+__pdataBANK1 D1 0 BANK1 1 dataBANK1 dist/default/production/mq-2016.X.production.obj
+__size_of_adcon_init 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__end_of_estado_menu_limpar 2A5C 0 CODE 0 text16 dist/default/production/mq-2016.X.production.obj
+__CFG_FOSC$XT 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+rs232_transmite@qtd_bytes 78 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+__end_of_btns_init FF4 0 CODE 0 text11 dist/default/production/mq-2016.X.production.obj
+estado_executa_muda@i_835 58 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+i1_eeprom_write 2EB2 0 CODE 0 text26 dist/default/production/mq-2016.X.production.obj
+?_lcd_goto E6 0 BANK1 1 cstackBANK1 dist/default/production/mq-2016.X.production.obj
+_btns_init F8C 0 CODE 0 text11 dist/default/production/mq-2016.X.production.obj
+__end_of_estado_executa_muda 5F8 0 CODE 0 text23 dist/default/production/mq-2016.X.production.obj
+adcon_captura_grava@i 53 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+adcon_captura_grava@x 4E 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__size_of_btns_init 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+estado_menu_principal@i_806 65 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Lbank3 0 0 ABS 0 bank3 -
+__size_of_estado_menu_conf_quant_sensores 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+___latbits 2 0 ABS 0 - /tmp/cgtuW9Y6a.obj
+__end_of_estado_menu_conf_quant_sensores 12E2 0 CODE 0 text14 dist/default/production/mq-2016.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+__ptext1 29E2 0 CODE 0 text1 dist/default/production/mq-2016.X.production.obj
+eeprom_read@addr E5 0 BANK1 1 cstackBANK1 dist/default/production/mq-2016.X.production.obj
+__end_of_menu_quant_sensores A74 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+__ptext2 2B68 0 CODE 0 text2 dist/default/production/mq-2016.X.production.obj
+estado_max_min@opt 5A 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__ptext3 2B9A 0 CODE 0 text3 dist/default/production/mq-2016.X.production.obj
+i1eeprom_read@addr 71 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+__ptext4 2F8A 0 CODE 0 text4 dist/default/production/mq-2016.X.production.obj
+__size_of_adcon_ler_canal 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+adcon_mostra@t_int 34 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__ptext5 2C0C 0 CODE 0 text5 dist/default/production/mq-2016.X.production.obj
+__end_of_eeprom_gravar_word 2BCE 0 CODE 0 text3 dist/default/production/mq-2016.X.production.obj
+__ptext6 2E54 0 CODE 0 text6 dist/default/production/mq-2016.X.production.obj
+?_lcd_puts E6 0 BANK1 1 cstackBANK1 dist/default/production/mq-2016.X.production.obj
+__ptext7 151A 0 CODE 0 text7 dist/default/production/mq-2016.X.production.obj
+__end_of_timer0_init 29FC 0 CODE 0 text1 dist/default/production/mq-2016.X.production.obj
+__end_of_eeprom_ler_word 2D44 0 CODE 0 text37 dist/default/production/mq-2016.X.production.obj
+i1eeprom_write@addr 72 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__ptext8 2F14 0 CODE 0 text8 dist/default/production/mq-2016.X.production.obj
+_timer0_init 29E2 0 CODE 0 text1 dist/default/production/mq-2016.X.production.obj
+__ptext9 97C 0 CODE 0 text9 dist/default/production/mq-2016.X.production.obj
+__pcstackBANK1 DF 0 BANK1 1 cstackBANK1 dist/default/production/mq-2016.X.production.obj
+__end_of_menu_tempo_amostra A5C 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+__size_of_lcd_init 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__size_of_lcd_goto 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+rs232_transmite@qtd_val 76 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+__size_of_adcon_mostra 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+estado_ver_todos@opt 5B 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__end_of_div 1084 0 CODE 0 text33 dist/default/production/mq-2016.X.production.obj
+__end_of_LCD_POSICAO A98 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+_estado_menu_limpar 2A3A 0 CODE 0 text16 dist/default/production/mq-2016.X.production.obj
+handler@pos_taxa E1 0 BANK1 1 cstackBANK1 dist/default/production/mq-2016.X.production.obj
+eeprom_gravar_word@end EA 0 BANK1 1 cstackBANK1 dist/default/production/mq-2016.X.production.obj
+__size_ofi1_lcd_goto 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__size_ofi1_lcd_puts 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__end_of__initialization 2C9A 0 CODE 0 cinit dist/default/production/mq-2016.X.production.obj
+__end_of_lcd_clear 2B36 0 CODE 0 text39 dist/default/production/mq-2016.X.production.obj
+__end_of___lwdiv 11A4 0 CODE 0 text32 dist/default/production/mq-2016.X.production.obj
+_btns_testa 2D9A 0 CODE 0 text42 dist/default/production/mq-2016.X.production.obj
+?_adcon_ler_canal 70 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+adcon_captura_grava@maior 4A 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__end_of_adcon_ler_canal 19C8 0 CODE 0 text36 dist/default/production/mq-2016.X.production.obj
+adcon_captura_grava@t_int 55 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+adcon_captura_grava@menor 4C 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__size_ofi1_lcd_write 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__end_of_lcd_goto 2EB2 0 CODE 0 text6 dist/default/production/mq-2016.X.production.obj
+?i1_lcd_goto 72 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+i1_eeprom_read 2BCE 0 CODE 0 text38 dist/default/production/mq-2016.X.production.obj
+mq_mostra@F1739 A0 0 BANK1 1 bssBANK1 dist/default/production/mq-2016.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+eeprom_write@addr E6 0 BANK1 1 cstackBANK1 dist/default/production/mq-2016.X.production.obj
+_adcon_ler_canal 18BA 0 CODE 0 text36 dist/default/production/mq-2016.X.production.obj
+___awmod 1452 0 CODE 0 text34 dist/default/production/mq-2016.X.production.obj
+___lwmod 1084 0 CODE 0 text31 dist/default/production/mq-2016.X.production.obj
+_estado_executa_muda 2A 0 CODE 0 text23 dist/default/production/mq-2016.X.production.obj
+_sprintf 1DAC 0 CODE 0 text30 dist/default/production/mq-2016.X.production.obj
+_handler 1AEA 0 CODE 0 text12 dist/default/production/mq-2016.X.production.obj
+?___bmul 70 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+?_eeprom_ler_word 72 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+lcd_puts@str E6 0 BANK1 1 cstackBANK1 dist/default/production/mq-2016.X.production.obj
+___lbdiv 2DF6 0 CODE 0 text19 dist/default/production/mq-2016.X.production.obj
+__Hcinit 0 0 ABS 0 cinit -
+__Lcinit 0 0 ABS 0 cinit -
+___awdiv 15EC 0 CODE 0 text35 dist/default/production/mq-2016.X.production.obj
+___lwdiv 110A 0 CODE 0 text32 dist/default/production/mq-2016.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__end_ofi1_lcd_goto 2CF0 0 CODE 0 text29 dist/default/production/mq-2016.X.production.obj
+_dpowers A74 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+__end_ofi1_lcd_write 2D9A 0 CODE 0 text40 dist/default/production/mq-2016.X.production.obj
+adcon_mostra@i 36 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+_estado_ver_todos 12E2 0 CODE 0 text18 dist/default/production/mq-2016.X.production.obj
+_eeprom_read 2C0C 0 CODE 0 text5 dist/default/production/mq-2016.X.production.obj
+_estado_menu_principal 5F8 0 CODE 0 text21 dist/default/production/mq-2016.X.production.obj
+eeprom_gravar_word@dado E7 0 BANK1 1 cstackBANK1 dist/default/production/mq-2016.X.production.obj
+__end_of_sprintf 2000 0 CODE 0 text30 dist/default/production/mq-2016.X.production.obj
+handler@tempo_amostra DF 0 BANK1 1 cstackBANK1 dist/default/production/mq-2016.X.production.obj
+eeprom_write@value E4 0 BANK1 1 cstackBANK1 dist/default/production/mq-2016.X.production.obj
+clear_ram0 29D2 0 CODE 0 clrtext dist/default/production/mq-2016.X.production.obj
+estado_menu_principal@maior 5C 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+i1lcd_puts@cmd 78 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+lcd_puts@cmd EA 0 BANK1 1 cstackBANK1 dist/default/production/mq-2016.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+_estado_inicial 29C4 0 CODE 0 text22 dist/default/production/mq-2016.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__size_ofi1_eeprom_read 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__pbssBANK0 6E 0 BANK0 1 bssBANK0 dist/default/production/mq-2016.X.production.obj
+eeprom_ler_word@temp_int 77 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+handler@count_t0 CD 0 BANK1 1 bssBANK1 dist/default/production/mq-2016.X.production.obj
+__end_of_adcon_captura_grava F8C 0 CODE 0 text24 dist/default/production/mq-2016.X.production.obj
+sprintf@flag 2D 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__size_of_lcd_puts 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+estado_menu_principal@t_int 66 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+estado_menu_principal@menor 5E 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production/mq-2016.X.production.obj
+?_eeprom_write E4 0 BANK1 1 cstackBANK1 dist/default/production/mq-2016.X.production.obj
+__Hstringtext 0 0 ABS 0 stringtext -
+__Lstringtext 0 0 ABS 0 stringtext -
+__end_ofi1_eeprom_read 2C0C 0 CODE 0 text38 dist/default/production/mq-2016.X.production.obj
+__pstringtext A00 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+__ptext10 2B36 0 CODE 0 text10 dist/default/production/mq-2016.X.production.obj
+__ptext20 2A5C 0 CODE 0 text20 dist/default/production/mq-2016.X.production.obj
+_rs232_init 2B36 0 CODE 0 text10 dist/default/production/mq-2016.X.production.obj
+__ptext11 F8C 0 CODE 0 text11 dist/default/production/mq-2016.X.production.obj
+__ptext30 1DAC 0 CODE 0 text30 dist/default/production/mq-2016.X.production.obj
+__end_of___lbdiv 2E54 0 CODE 0 text19 dist/default/production/mq-2016.X.production.obj
+__ptext21 5F8 0 CODE 0 text21 dist/default/production/mq-2016.X.production.obj
+__ptext40 2D44 0 CODE 0 text40 dist/default/production/mq-2016.X.production.obj
+__ptext12 1AEA 0 CODE 0 text12 dist/default/production/mq-2016.X.production.obj
+__ptext31 1084 0 CODE 0 text31 dist/default/production/mq-2016.X.production.obj
+__ptext22 29C4 0 CODE 0 text22 dist/default/production/mq-2016.X.production.obj
+__ptext41 17BA 0 CODE 0 text41 dist/default/production/mq-2016.X.production.obj
+__ptext13 16D0 0 CODE 0 text13 dist/default/production/mq-2016.X.production.obj
+__ptext32 110A 0 CODE 0 text32 dist/default/production/mq-2016.X.production.obj
+_ADCON0bits 1F 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+_ADCON1bits 9F 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__ptext23 2A 0 CODE 0 text23 dist/default/production/mq-2016.X.production.obj
+__ptext42 2D9A 0 CODE 0 text42 dist/default/production/mq-2016.X.production.obj
+sprintf@prec 2B 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__HidataBANK1 0 0 ABS 0 idataBANK1 -
+__size_of___awdiv 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__LidataBANK1 0 0 ABS 0 idataBANK1 -
+__ptext14 123E 0 CODE 0 text14 dist/default/production/mq-2016.X.production.obj
+__ptext33 100C 0 CODE 0 text33 dist/default/production/mq-2016.X.production.obj
+__end_of_adcon_mostra 1AEA 0 CODE 0 text27 dist/default/production/mq-2016.X.production.obj
+__pidataBANK1 29FC 0 CODE 0 idataBANK1 dist/default/production/mq-2016.X.production.obj
+__ptext24 D2C 0 CODE 0 text24 dist/default/production/mq-2016.X.production.obj
+__ptext43 2AD2 0 CODE 0 text43 dist/default/production/mq-2016.X.production.obj
+__ptext15 1390 0 CODE 0 text15 dist/default/production/mq-2016.X.production.obj
+__ptext34 1452 0 CODE 0 text34 dist/default/production/mq-2016.X.production.obj
+__ptext25 2AA6 0 CODE 0 text25 dist/default/production/mq-2016.X.production.obj
+__ptext16 2A3A 0 CODE 0 text16 dist/default/production/mq-2016.X.production.obj
+__ptext35 15EC 0 CODE 0 text35 dist/default/production/mq-2016.X.production.obj
+__HbssBANK3 0 0 ABS 0 bssBANK3 -
+__ptext26 2EB2 0 CODE 0 text26 dist/default/production/mq-2016.X.production.obj
+__LbssBANK3 0 0 ABS 0 bssBANK3 -
+__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__ptext17 2A18 0 CODE 0 text17 dist/default/production/mq-2016.X.production.obj
+__ptext36 18BA 0 CODE 0 text36 dist/default/production/mq-2016.X.production.obj
+__pbssBANK3 190 0 BANK3 1 bssBANK3 dist/default/production/mq-2016.X.production.obj
+___awmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+__end_of___lwmod 110A 0 CODE 0 text31 dist/default/production/mq-2016.X.production.obj
+__ptext27 19C8 0 CODE 0 text27 dist/default/production/mq-2016.X.production.obj
+___lwmod@divisor 78 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+handler@option E3 0 BANK1 1 cstackBANK1 dist/default/production/mq-2016.X.production.obj
+__ptext18 12E2 0 CODE 0 text18 dist/default/production/mq-2016.X.production.obj
+__ptext37 2CF0 0 CODE 0 text37 dist/default/production/mq-2016.X.production.obj
+__ptext28 11A4 0 CODE 0 text28 dist/default/production/mq-2016.X.production.obj
+__ptext19 2DF6 0 CODE 0 text19 dist/default/production/mq-2016.X.production.obj
+__ptext38 2BCE 0 CODE 0 text38 dist/default/production/mq-2016.X.production.obj
+__ptext29 2CA2 0 CODE 0 text29 dist/default/production/mq-2016.X.production.obj
+__ptext39 2B04 0 CODE 0 text39 dist/default/production/mq-2016.X.production.obj
+__end_of_lcd_write 9FE 0 CODE 0 text9 dist/default/production/mq-2016.X.production.obj
+_INTCONbits B 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__Hend_init 2A 0 CODE 0 end_init -
+__Lend_init 24 0 CODE 0 end_init -
+___lbdiv@divisor 72 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+?i1_eeprom_write 70 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+i1_lcd_goto 2CA2 0 CODE 0 text29 dist/default/production/mq-2016.X.production.obj
+_adcon_init 2B68 0 CODE 0 text2 dist/default/production/mq-2016.X.production.obj
+___awdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+i1eeprom_gravar_word@end 76 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+___lwdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+rs232_transmite@qtd_sens 77 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+?i1_eeprom_gravar_word 73 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+__end_ofi1_lcd_puts 123E 0 CODE 0 text28 dist/default/production/mq-2016.X.production.obj
+_gl_item_menu_principal 6F 0 BANK0 1 bssBANK0 dist/default/production/mq-2016.X.production.obj
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__HcstackBANK3 0 0 ABS 0 cstackBANK3 -
+__LcstackBANK3 0 0 ABS 0 cstackBANK3 -
+__pcstackBANK3 1A1 0 BANK3 1 cstackBANK3 dist/default/production/mq-2016.X.production.obj
+adcon_ler_canal@i 7B 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+__stringdata B16 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+?i1_lcd_puts 74 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+i1_eeprom_gravar_word 2AA6 0 CODE 0 text25 dist/default/production/mq-2016.X.production.obj
+__end_oflog@coeff B16 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+estado_executa_muda@i 59 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__end_ofi1_eeprom_gravar_word 2AD2 0 CODE 0 text25 dist/default/production/mq-2016.X.production.obj
+adcon_ler_canal@acc 77 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+init_ram0 2A88 0 CODE 0 inittext dist/default/production/mq-2016.X.production.obj
+adcon_ler_canal@cnl 76 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+_mq_gl_r0 AA0 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+intlevel0 0 0 CODE 0 functab /tmp/cgtuW9Y6a.obj
+__end_of_rs232_init 2B68 0 CODE 0 text10 dist/default/production/mq-2016.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+intlevel1 0 0 CODE 0 functab /tmp/cgtuW9Y6a.obj
+i1lcd_write@c 71 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+intlevel2 0 0 CODE 0 functab /tmp/cgtuW9Y6a.obj
+estado_menu_conf_quant_sensores@opt 5B 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__size_of_handler 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__end_ofi1_eeprom_write 2F14 0 CODE 0 text26 dist/default/production/mq-2016.X.production.obj
+_adcon_captura_grava D2C 0 CODE 0 text24 dist/default/production/mq-2016.X.production.obj
+intlevel3 0 0 CODE 0 functab /tmp/cgtuW9Y6a.obj
+intlevel4 0 0 CODE 0 functab /tmp/cgtuW9Y6a.obj
+estado_maquina@op 68 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__size_of_estado_menu_conf_tempo_amostra 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+intlevel5 0 0 CODE 0 functab /tmp/cgtuW9Y6a.obj
+adcon_captura_grava@qtd_val 52 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+adcon_captura_grava@posicao 50 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+adcon_captura_grava@qtd_sens 51 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__end_of_estado_ver_todos 1390 0 CODE 0 text18 dist/default/production/mq-2016.X.production.obj
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+___lbdiv@quotient 76 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+start_initialization 2C56 0 CODE 0 cinit dist/default/production/mq-2016.X.production.obj
+estado_executa_muda@endereco 4F 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+___awdiv@quotient 77 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+___lwdiv@quotient 75 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+__end_of_canais AA0 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+i1_lcd_puts 11A4 0 CODE 0 text28 dist/default/production/mq-2016.X.production.obj
+__end_of_adcon_init 2B9A 0 CODE 0 text2 dist/default/production/mq-2016.X.production.obj
+i1lcd_goto@x 72 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+__end_of_estado_menu_principal 97C 0 CODE 0 text21 dist/default/production/mq-2016.X.production.obj
+__end_of_eeprom_read 2C56 0 CODE 0 text5 dist/default/production/mq-2016.X.production.obj
+_menu_inicial D1 0 BANK1 1 dataBANK1 dist/default/production/mq-2016.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+i1eeprom_write@value 70 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+__Lmaintext 0 0 ABS 0 maintext -
+__size_ofi1_eeprom_gravar_word 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__pmaintext 1C36 0 CODE 0 maintext dist/default/production/mq-2016.X.production.obj
+_OPTION_REGbits 81 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+estado_menu_limpar@opt 5A 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__Hinittext 0 0 ABS 0 inittext -
+__Linittext 0 0 ABS 0 inittext -
+_gl_item_menu_ver_todos D0 0 BANK1 1 bssBANK1 dist/default/production/mq-2016.X.production.obj
+__size_of_sprintf 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__size_of___awmod 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+estado_executa_muda@maior 50 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+_estado_maquina 16D0 0 CODE 0 text13 dist/default/production/mq-2016.X.production.obj
+__initialization 2C56 0 CODE 0 cinit dist/default/production/mq-2016.X.production.obj
+estado_executa_muda@menor 52 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__size_of_div 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__end_of_rs232_transmite 18BA 0 CODE 0 text41 dist/default/production/mq-2016.X.production.obj
+__stringbase A24 0 STRCODE 0 stringtext dist/default/production/mq-2016.X.production.obj
+__end_of_eeprom_write 3000 0 CODE 0 text4 dist/default/production/mq-2016.X.production.obj
+__end_of_estado_captura_mostra 2A80 0 CODE 0 text20 dist/default/production/mq-2016.X.production.obj
+lcd_write@c E5 0 BANK1 1 cstackBANK1 dist/default/production/mq-2016.X.production.obj
+i1lcd_goto@y 74 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+adcon_captura_grava@i_536 54 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+mq_mostra@F1741 B0 0 BANK1 1 bssBANK1 dist/default/production/mq-2016.X.production.obj
+__end_of_lcd_init 2F8A 0 CODE 0 text8 dist/default/production/mq-2016.X.production.obj
+___awmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+___lwmod@dividend 7A 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+sprintf@_val 2E 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+__end_of_estado_maquina 17BA 0 CODE 0 text13 dist/default/production/mq-2016.X.production.obj
+___bmul@product 72 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+__size_ofi1_eeprom_write 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__end_of_estado_inicial 29D2 0 CODE 0 text22 dist/default/production/mq-2016.X.production.obj
+___awmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+___lwmod@counter 7D 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__end_of_btns_testa 2DF6 0 CODE 0 text42 dist/default/production/mq-2016.X.production.obj
+__end_of_estado_max_min 2A3A 0 CODE 0 text17 dist/default/production/mq-2016.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__size_of___bmul 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__size_of_btns_testa 0 0 ABS 0 - dist/default/production/mq-2016.X.production.obj
+__end_of___bmul 2B04 0 CODE 0 text43 dist/default/production/mq-2016.X.production.obj
+sprintf@c 33 0 BANK0 1 cstackBANK0 dist/default/production/mq-2016.X.production.obj
+___lbdiv@dividend 74 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+adcon_mostra@F1828 C0 0 BANK1 1 bssBANK1 dist/default/production/mq-2016.X.production.obj
+___awdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production/mq-2016.X.production.obj
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta> <class name>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 3 2 CODE
+intentry 0 4 8 4FB 2 CODE
+config 0 2007 400E 1 2 CONFIG
+cstackCOMMON 1 70 70 E 1 COMMON
+cstackBANK0 1 20 20 50 1 BANK0
+bssBANK1 1 A0 A0 4B 1 BANK1
+bssBANK3 1 190 190 13 1 BANK3
+stringtext 0 500 A00 196 2 STRCODE
+text24 0 696 D2C 164 2 CODE
+text30 0 ED6 1DAC 12A 2 CODE
+maintext 0 E1B 1C36 BB 2 CODE
+text12 0 D75 1AEA A6 2 CODE
+text27 0 CE4 19C8 91 2 CODE
+text36 0 C5D 18BA 87 2 CODE
+text41 0 BDD 17BA 80 2 CODE
+text13 0 B68 16D0 75 2 CODE
+text35 0 AF6 15EC 72 2 CODE
+text7 0 A8D 151A 69 2 CODE
+text34 0 A29 1452 64 2 CODE
+text15 0 9C8 1390 61 2 CODE
+text18 0 971 12E2 57 2 CODE
+text14 0 91F 123E 52 2 CODE
+text28 0 8D2 11A4 4D 2 CODE
+text32 0 885 110A 4D 2 CODE
+text31 0 842 1084 43 2 CODE
+text33 0 806 100C 3C 2 CODE
+text4 0 17C5 2F8A 3B 2 CODE
+text8 0 178A 2F14 3B 2 CODE
+text26 0 1759 2EB2 31 2 CODE
+text6 0 172A 2E54 2F 2 CODE
+text19 0 16FB 2DF6 2F 2 CODE
+text42 0 16CD 2D9A 2E 2 CODE
+text40 0 16A2 2D44 2B 2 CODE
+text37 0 1678 2CF0 2A 2 CODE
+text29 0 1651 2CA2 27 2 CODE
+cinit 0 162B 2C56 26 2 CODE
+text5 0 1606 2C0C 25 2 CODE
+text38 0 15E7 2BCE 1F 2 CODE
+text3 0 15CD 2B9A 1A 2 CODE
+text2 0 15B4 2B68 19 2 CODE
+text10 0 159B 2B36 19 2 CODE
+text39 0 1582 2B04 19 2 CODE
+text43 0 1569 2AD2 19 2 CODE
+text25 0 1553 2AA6 16 2 CODE
+inittext 0 1540 2A80 13 2 CODE
+text20 0 152E 2A5C 12 2 CODE
+text16 0 151D 2A3A 11 2 CODE
+text17 0 150C 2A18 11 2 CODE
+idataBANK1 0 14FE 29FC E 2 CODE
+text1 0 14F1 29E2 D 2 CODE
+clrtext 0 14E9 29D2 8 2 CODE
+text22 0 14E2 29C4 7 2 CODE
