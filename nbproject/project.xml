@@ -3,9 +3,14 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>sensors</name>
-            <creation-uuid>647c6f08-a5df-4f66-b0d9-58d414e7cfd2</creation-uuid>
+            <name>mq-2016</name>
+            <creation-uuid>129d2a4b-b10b-4e8e-b2ad-a9f124df23fa</creation-uuid>
             <make-project-type>0</make-project-type>
+            <c-extensions>c</c-extensions>
+            <cpp-extensions/>
+            <header-extensions>h</header-extensions>
+            <sourceEncoding>ISO-8859-1</sourceEncoding>
+            <asminc-extensions/>
             <make-dep-projects/>
             <sourceRootList/>
             <confList>
@@ -14,7 +19,6 @@
                     <type>2</type>
                 </confElem>
             </confList>
-            <sourceEncoding>ISO-8859-1</sourceEncoding>
             <formatting>
                 <project-formatting-style>false</project-formatting-style>
             </formatting>
